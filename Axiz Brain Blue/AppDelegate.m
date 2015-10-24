@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  Axiz Brain Blue
+//  Axiz Brain Red
 //
-//  Created by tatsuhiro-sato on 2015/10/24.
-//  Copyright © 2015年 tatsuhiro-sato. All rights reserved.
+//  Created by tatsuleft on 2015/07/30.
+//  Copyright (c) 2015年 tatsuleft. All rights reserved.
 //
 
 #import "AppDelegate.h"

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9DE542BE1BDB492200B2A672 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542BD1BDB492200B2A672 /* main.m */; };
-		9DE542C11BDB492200B2A672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542C01BDB492200B2A672 /* AppDelegate.m */; };
-		9DE542C41BDB492200B2A672 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542C31BDB492200B2A672 /* ViewController.m */; };
 		9DE542C71BDB492200B2A672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542C51BDB492200B2A672 /* Main.storyboard */; };
 		9DE542C91BDB492200B2A672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542C81BDB492200B2A672 /* Assets.xcassets */; };
 		9DE542CC1BDB492200B2A672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */; };
@@ -37,10 +35,6 @@
 /* Begin PBXFileReference section */
 		9DE542B91BDB492200B2A672 /* Axiz Brain Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axiz Brain Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE542BD1BDB492200B2A672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9DE542BF1BDB492200B2A672 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9DE542C01BDB492200B2A672 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9DE542C21BDB492200B2A672 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9DE542C31BDB492200B2A672 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9DE542C61BDB492200B2A672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE542C81BDB492200B2A672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE542CB1BDB492200B2A672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +95,6 @@
 		9DE542BB1BDB492200B2A672 /* Axiz Brain Blue */ = {
 			isa = PBXGroup;
 			children = (
-				9DE542BF1BDB492200B2A672 /* AppDelegate.h */,
-				9DE542C01BDB492200B2A672 /* AppDelegate.m */,
-				9DE542C21BDB492200B2A672 /* ViewController.h */,
-				9DE542C31BDB492200B2A672 /* ViewController.m */,
 				9DE542C51BDB492200B2A672 /* Main.storyboard */,
 				9DE542C81BDB492200B2A672 /* Assets.xcassets */,
 				9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */,
@@ -270,8 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE542C41BDB492200B2A672 /* ViewController.m in Sources */,
-				9DE542C11BDB492200B2A672 /* AppDelegate.m in Sources */,
 				9DE542BE1BDB492200B2A672 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
