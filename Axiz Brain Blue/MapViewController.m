@@ -1,13 +1,5 @@
-//
-//  MapViewController.m
-//  Axiz Brain Blue
-//
-//  Created by 左藤樹洋 on 2014/06/18.
-//  Copyright (c) 2014年 Tatsuhiro Sato. All rights reserved.
-//
-
 #import "MapViewController.h"
-#import "mainScrollViewController.h"
+#import "AXZHomeViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "STAnnotation.h"
 

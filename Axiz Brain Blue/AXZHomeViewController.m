@@ -5,8 +5,6 @@
 #import <CoreLocation/CoreLocation.h>
 #import "AXZWebViewController.h"
 #import "AXZSettingViewController.h"
-#import "AXZSlopeViewController.h"
-#import "AXZBankViewController.h"
 
 #define PAGE_COUNT 5
 
@@ -149,17 +147,12 @@
 
 - (void)arrowLeftButtonDidTapped:(id)sender
 {
-    AXZBankViewController *bankViewController = [[AXZBankViewController alloc] initWithNibName:NSStringFromClass([AXZBankViewController class]) bundle:nil];
-    bankViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:bankViewController animated:YES completion:nil];
+
 }
 
 - (void)arrowRightButtonDidTapped:(id)sender
 {
-    AXZSlopeViewController *slopeViewController = [[AXZSlopeViewController alloc] initWithNibName:NSStringFromClass([AXZSlopeViewController class]) bundle:nil];
-    slopeViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:slopeViewController animated:YES completion:nil];
-}
+    }
 
 //=============================================================
 #pragma Error

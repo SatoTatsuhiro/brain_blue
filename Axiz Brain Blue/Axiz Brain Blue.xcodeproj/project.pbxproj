@@ -13,6 +13,22 @@
 		9DE542CC1BDB492200B2A672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */; };
 		9DE542D71BDB492300B2A672 /* Axiz_Brain_BlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542D61BDB492300B2A672 /* Axiz_Brain_BlueTests.m */; };
 		9DE542E21BDB492300B2A672 /* Axiz_Brain_BlueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542E11BDB492300B2A672 /* Axiz_Brain_BlueUITests.m */; };
+		9DE543081BDB580100B2A672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542F01BDB580100B2A672 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		9DE543091BDB580100B2A672 /* AXZAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542F21BDB580100B2A672 /* AXZAsset.m */; settings = {ASSET_TAGS = (); }; };
+		9DE5430A1BDB580100B2A672 /* AXZBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542F41BDB580100B2A672 /* AXZBlueToothViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9DE5430B1BDB580100B2A672 /* AXZBlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542F51BDB580100B2A672 /* AXZBlueToothViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		9DE5430C1BDB580100B2A672 /* AXZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542F71BDB580100B2A672 /* AXZHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9DE5430D1BDB580100B2A672 /* AXZMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542F91BDB580100B2A672 /* AXZMeterView.m */; settings = {ASSET_TAGS = (); }; };
+		9DE5430E1BDB580100B2A672 /* AXZMeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542FA1BDB580100B2A672 /* AXZMeterView.xib */; settings = {ASSET_TAGS = (); }; };
+		9DE5430F1BDB580100B2A672 /* AXZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542FC1BDB580100B2A672 /* AXZSettingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9DE543101BDB580100B2A672 /* AXZSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542FD1BDB580100B2A672 /* AXZSettingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		9DE543111BDB580100B2A672 /* AXZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542FF1BDB580100B2A672 /* AXZWebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9DE543121BDB580100B2A672 /* AXZWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE543001BDB580100B2A672 /* AXZWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		9DE543131BDB580100B2A672 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE543021BDB580100B2A672 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9DE543141BDB580100B2A672 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE543031BDB580100B2A672 /* MapViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		9DE543151BDB580100B2A672 /* UILabel+AXZUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE543051BDB580100B2A672 /* UILabel+AXZUI.m */; settings = {ASSET_TAGS = (); }; };
+		9DE543161BDB580100B2A672 /* UIView+AXZUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE543071BDB580100B2A672 /* UIView+AXZUI.m */; settings = {ASSET_TAGS = (); }; };
+		9DE543191BDB594600B2A672 /* STAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE543181BDB594600B2A672 /* STAnnotation.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +61,33 @@
 		9DE542DD1BDB492300B2A672 /* Axiz Brain BlueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axiz Brain BlueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE542E11BDB492300B2A672 /* Axiz_Brain_BlueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Axiz_Brain_BlueUITests.m; sourceTree = "<group>"; };
 		9DE542E31BDB492300B2A672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE542EF1BDB580100B2A672 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		9DE542F01BDB580100B2A672 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		9DE542F11BDB580100B2A672 /* AXZAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZAsset.h; sourceTree = SOURCE_ROOT; };
+		9DE542F21BDB580100B2A672 /* AXZAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZAsset.m; sourceTree = SOURCE_ROOT; };
+		9DE542F31BDB580100B2A672 /* AXZBlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZBlueToothViewController.h; sourceTree = SOURCE_ROOT; };
+		9DE542F41BDB580100B2A672 /* AXZBlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZBlueToothViewController.m; sourceTree = SOURCE_ROOT; };
+		9DE542F51BDB580100B2A672 /* AXZBlueToothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZBlueToothViewController.xib; sourceTree = SOURCE_ROOT; };
+		9DE542F61BDB580100B2A672 /* AXZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZHomeViewController.h; sourceTree = SOURCE_ROOT; };
+		9DE542F71BDB580100B2A672 /* AXZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZHomeViewController.m; sourceTree = SOURCE_ROOT; };
+		9DE542F81BDB580100B2A672 /* AXZMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZMeterView.h; sourceTree = SOURCE_ROOT; };
+		9DE542F91BDB580100B2A672 /* AXZMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZMeterView.m; sourceTree = SOURCE_ROOT; };
+		9DE542FA1BDB580100B2A672 /* AXZMeterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZMeterView.xib; sourceTree = SOURCE_ROOT; };
+		9DE542FB1BDB580100B2A672 /* AXZSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZSettingViewController.h; sourceTree = SOURCE_ROOT; };
+		9DE542FC1BDB580100B2A672 /* AXZSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZSettingViewController.m; sourceTree = SOURCE_ROOT; };
+		9DE542FD1BDB580100B2A672 /* AXZSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZSettingViewController.xib; sourceTree = SOURCE_ROOT; };
+		9DE542FE1BDB580100B2A672 /* AXZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZWebViewController.h; sourceTree = SOURCE_ROOT; };
+		9DE542FF1BDB580100B2A672 /* AXZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZWebViewController.m; sourceTree = SOURCE_ROOT; };
+		9DE543001BDB580100B2A672 /* AXZWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZWebViewController.xib; sourceTree = SOURCE_ROOT; };
+		9DE543011BDB580100B2A672 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = SOURCE_ROOT; };
+		9DE543021BDB580100B2A672 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = SOURCE_ROOT; };
+		9DE543031BDB580100B2A672 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = SOURCE_ROOT; };
+		9DE543041BDB580100B2A672 /* UILabel+AXZUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AXZUI.h"; sourceTree = SOURCE_ROOT; };
+		9DE543051BDB580100B2A672 /* UILabel+AXZUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AXZUI.m"; sourceTree = SOURCE_ROOT; };
+		9DE543061BDB580100B2A672 /* UIView+AXZUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AXZUI.h"; sourceTree = SOURCE_ROOT; };
+		9DE543071BDB580100B2A672 /* UIView+AXZUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AXZUI.m"; sourceTree = SOURCE_ROOT; };
+		9DE543171BDB594600B2A672 /* STAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnnotation.h; sourceTree = SOURCE_ROOT; };
+		9DE543181BDB594600B2A672 /* STAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnnotation.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +138,33 @@
 		9DE542BB1BDB492200B2A672 /* Axiz Brain Blue */ = {
 			isa = PBXGroup;
 			children = (
+				9DE542EF1BDB580100B2A672 /* AppDelegate.h */,
+				9DE542F01BDB580100B2A672 /* AppDelegate.m */,
+				9DE542F11BDB580100B2A672 /* AXZAsset.h */,
+				9DE542F21BDB580100B2A672 /* AXZAsset.m */,
+				9DE542F31BDB580100B2A672 /* AXZBlueToothViewController.h */,
+				9DE542F41BDB580100B2A672 /* AXZBlueToothViewController.m */,
+				9DE542F51BDB580100B2A672 /* AXZBlueToothViewController.xib */,
+				9DE542F61BDB580100B2A672 /* AXZHomeViewController.h */,
+				9DE542F71BDB580100B2A672 /* AXZHomeViewController.m */,
+				9DE542F81BDB580100B2A672 /* AXZMeterView.h */,
+				9DE542F91BDB580100B2A672 /* AXZMeterView.m */,
+				9DE542FA1BDB580100B2A672 /* AXZMeterView.xib */,
+				9DE542FB1BDB580100B2A672 /* AXZSettingViewController.h */,
+				9DE542FC1BDB580100B2A672 /* AXZSettingViewController.m */,
+				9DE542FD1BDB580100B2A672 /* AXZSettingViewController.xib */,
+				9DE542FE1BDB580100B2A672 /* AXZWebViewController.h */,
+				9DE542FF1BDB580100B2A672 /* AXZWebViewController.m */,
+				9DE543001BDB580100B2A672 /* AXZWebViewController.xib */,
+				9DE543011BDB580100B2A672 /* MapViewController.h */,
+				9DE543021BDB580100B2A672 /* MapViewController.m */,
+				9DE543031BDB580100B2A672 /* MapViewController.xib */,
+				9DE543041BDB580100B2A672 /* UILabel+AXZUI.h */,
+				9DE543051BDB580100B2A672 /* UILabel+AXZUI.m */,
+				9DE543061BDB580100B2A672 /* UIView+AXZUI.h */,
+				9DE543071BDB580100B2A672 /* UIView+AXZUI.m */,
+				9DE543171BDB594600B2A672 /* STAnnotation.h */,
+				9DE543181BDB594600B2A672 /* STAnnotation.m */,
 				9DE542C51BDB492200B2A672 /* Main.storyboard */,
 				9DE542C81BDB492200B2A672 /* Assets.xcassets */,
 				9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */,
@@ -234,8 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE542CC1BDB492200B2A672 /* LaunchScreen.storyboard in Resources */,
+				9DE543101BDB580100B2A672 /* AXZSettingViewController.xib in Resources */,
 				9DE542C91BDB492200B2A672 /* Assets.xcassets in Resources */,
+				9DE543141BDB580100B2A672 /* MapViewController.xib in Resources */,
 				9DE542C71BDB492200B2A672 /* Main.storyboard in Resources */,
+				9DE5430B1BDB580100B2A672 /* AXZBlueToothViewController.xib in Resources */,
+				9DE543121BDB580100B2A672 /* AXZWebViewController.xib in Resources */,
+				9DE5430E1BDB580100B2A672 /* AXZMeterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE543151BDB580100B2A672 /* UILabel+AXZUI.m in Sources */,
+				9DE5430F1BDB580100B2A672 /* AXZSettingViewController.m in Sources */,
+				9DE543111BDB580100B2A672 /* AXZWebViewController.m in Sources */,
+				9DE543191BDB594600B2A672 /* STAnnotation.m in Sources */,
+				9DE543081BDB580100B2A672 /* AppDelegate.m in Sources */,
+				9DE543131BDB580100B2A672 /* MapViewController.m in Sources */,
+				9DE543091BDB580100B2A672 /* AXZAsset.m in Sources */,
 				9DE542BE1BDB492200B2A672 /* main.m in Sources */,
+				9DE5430C1BDB580100B2A672 /* AXZHomeViewController.m in Sources */,
+				9DE543161BDB580100B2A672 /* UIView+AXZUI.m in Sources */,
+				9DE5430D1BDB580100B2A672 /* AXZMeterView.m in Sources */,
+				9DE5430A1BDB580100B2A672 /* AXZBlueToothViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Axiz Brain Blue/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-Blue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Axiz Brain Blue/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-Blue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +574,7 @@
 				9DE542E81BDB492300B2A672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DE542E91BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain BlueTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +583,7 @@
 				9DE542EB1BDB492300B2A672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DE542EC1BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain BlueUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +592,7 @@
 				9DE542EE1BDB492300B2A672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
