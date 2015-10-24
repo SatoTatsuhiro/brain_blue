@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DE542BE1BDB492200B2A672 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542BD1BDB492200B2A672 /* main.m */; };
+		9DE542C11BDB492200B2A672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542C01BDB492200B2A672 /* AppDelegate.m */; };
+		9DE542C41BDB492200B2A672 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542C31BDB492200B2A672 /* ViewController.m */; };
+		9DE542C71BDB492200B2A672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542C51BDB492200B2A672 /* Main.storyboard */; };
+		9DE542C91BDB492200B2A672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542C81BDB492200B2A672 /* Assets.xcassets */; };
+		9DE542CC1BDB492200B2A672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */; };
+		9DE542D71BDB492300B2A672 /* Axiz_Brain_BlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542D61BDB492300B2A672 /* Axiz_Brain_BlueTests.m */; };
+		9DE542E21BDB492300B2A672 /* Axiz_Brain_BlueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542E11BDB492300B2A672 /* Axiz_Brain_BlueUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DE542D31BDB492300B2A672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DE542B11BDB492200B2A672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DE542B81BDB492200B2A672;
+			remoteInfo = "Axiz Brain Blue";
+		};
+		9DE542DE1BDB492300B2A672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DE542B11BDB492200B2A672 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DE542B81BDB492200B2A672;
+			remoteInfo = "Axiz Brain Blue";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DE542B91BDB492200B2A672 /* Axiz Brain Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axiz Brain Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE542BD1BDB492200B2A672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DE542BF1BDB492200B2A672 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DE542C01BDB492200B2A672 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DE542C21BDB492200B2A672 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9DE542C31BDB492200B2A672 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DE542C61BDB492200B2A672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DE542C81BDB492200B2A672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DE542CB1BDB492200B2A672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DE542CD1BDB492200B2A672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE542D21BDB492300B2A672 /* Axiz Brain BlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axiz Brain BlueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE542D61BDB492300B2A672 /* Axiz_Brain_BlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Axiz_Brain_BlueTests.m; sourceTree = "<group>"; };
+		9DE542D81BDB492300B2A672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE542DD1BDB492300B2A672 /* Axiz Brain BlueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axiz Brain BlueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE542E11BDB492300B2A672 /* Axiz_Brain_BlueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Axiz_Brain_BlueUITests.m; sourceTree = "<group>"; };
+		9DE542E31BDB492300B2A672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DE542B61BDB492200B2A672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE542CF1BDB492300B2A672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE542DA1BDB492300B2A672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DE542B01BDB492200B2A672 = {
+			isa = PBXGroup;
+			children = (
+				9DE542BB1BDB492200B2A672 /* Axiz Brain Blue */,
+				9DE542D51BDB492300B2A672 /* Axiz Brain BlueTests */,
+				9DE542E01BDB492300B2A672 /* Axiz Brain BlueUITests */,
+				9DE542BA1BDB492200B2A672 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DE542BA1BDB492200B2A672 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DE542B91BDB492200B2A672 /* Axiz Brain Blue.app */,
+				9DE542D21BDB492300B2A672 /* Axiz Brain BlueTests.xctest */,
+				9DE542DD1BDB492300B2A672 /* Axiz Brain BlueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DE542BB1BDB492200B2A672 /* Axiz Brain Blue */ = {
+			isa = PBXGroup;
+			children = (
+				9DE542BF1BDB492200B2A672 /* AppDelegate.h */,
+				9DE542C01BDB492200B2A672 /* AppDelegate.m */,
+				9DE542C21BDB492200B2A672 /* ViewController.h */,
+				9DE542C31BDB492200B2A672 /* ViewController.m */,
+				9DE542C51BDB492200B2A672 /* Main.storyboard */,
+				9DE542C81BDB492200B2A672 /* Assets.xcassets */,
+				9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */,
+				9DE542CD1BDB492200B2A672 /* Info.plist */,
+				9DE542BC1BDB492200B2A672 /* Supporting Files */,
+			);
+			path = "Axiz Brain Blue";
+			sourceTree = "<group>";
+		};
+		9DE542BC1BDB492200B2A672 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DE542BD1BDB492200B2A672 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DE542D51BDB492300B2A672 /* Axiz Brain BlueTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DE542D61BDB492300B2A672 /* Axiz_Brain_BlueTests.m */,
+				9DE542D81BDB492300B2A672 /* Info.plist */,
+			);
+			path = "Axiz Brain BlueTests";
+			sourceTree = "<group>";
+		};
+		9DE542E01BDB492300B2A672 /* Axiz Brain BlueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DE542E11BDB492300B2A672 /* Axiz_Brain_BlueUITests.m */,
+				9DE542E31BDB492300B2A672 /* Info.plist */,
+			);
+			path = "Axiz Brain BlueUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DE542B81BDB492200B2A672 /* Axiz Brain Blue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE542E61BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain Blue" */;
+			buildPhases = (
+				9DE542B51BDB492200B2A672 /* Sources */,
+				9DE542B61BDB492200B2A672 /* Frameworks */,
+				9DE542B71BDB492200B2A672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Axiz Brain Blue";
+			productName = "Axiz Brain Blue";
+			productReference = 9DE542B91BDB492200B2A672 /* Axiz Brain Blue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DE542D11BDB492300B2A672 /* Axiz Brain BlueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE542E91BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain BlueTests" */;
+			buildPhases = (
+				9DE542CE1BDB492300B2A672 /* Sources */,
+				9DE542CF1BDB492300B2A672 /* Frameworks */,
+				9DE542D01BDB492300B2A672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DE542D41BDB492300B2A672 /* PBXTargetDependency */,
+			);
+			name = "Axiz Brain BlueTests";
+			productName = "Axiz Brain BlueTests";
+			productReference = 9DE542D21BDB492300B2A672 /* Axiz Brain BlueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DE542DC1BDB492300B2A672 /* Axiz Brain BlueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE542EC1BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain BlueUITests" */;
+			buildPhases = (
+				9DE542D91BDB492300B2A672 /* Sources */,
+				9DE542DA1BDB492300B2A672 /* Frameworks */,
+				9DE542DB1BDB492300B2A672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DE542DF1BDB492300B2A672 /* PBXTargetDependency */,
+			);
+			name = "Axiz Brain BlueUITests";
+			productName = "Axiz Brain BlueUITests";
+			productReference = 9DE542DD1BDB492300B2A672 /* Axiz Brain BlueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DE542B11BDB492200B2A672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "tatsuhiro-sato";
+				TargetAttributes = {
+					9DE542B81BDB492200B2A672 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					9DE542D11BDB492300B2A672 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9DE542B81BDB492200B2A672;
+					};
+					9DE542DC1BDB492300B2A672 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9DE542B81BDB492200B2A672;
+					};
+				};
+			};
+			buildConfigurationList = 9DE542B41BDB492200B2A672 /* Build configuration list for PBXProject "Axiz Brain Blue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DE542B01BDB492200B2A672;
+			productRefGroup = 9DE542BA1BDB492200B2A672 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DE542B81BDB492200B2A672 /* Axiz Brain Blue */,
+				9DE542D11BDB492300B2A672 /* Axiz Brain BlueTests */,
+				9DE542DC1BDB492300B2A672 /* Axiz Brain BlueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DE542B71BDB492200B2A672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE542CC1BDB492200B2A672 /* LaunchScreen.storyboard in Resources */,
+				9DE542C91BDB492200B2A672 /* Assets.xcassets in Resources */,
+				9DE542C71BDB492200B2A672 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE542D01BDB492300B2A672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE542DB1BDB492300B2A672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DE542B51BDB492200B2A672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE542C41BDB492200B2A672 /* ViewController.m in Sources */,
+				9DE542C11BDB492200B2A672 /* AppDelegate.m in Sources */,
+				9DE542BE1BDB492200B2A672 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE542CE1BDB492300B2A672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE542D71BDB492300B2A672 /* Axiz_Brain_BlueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE542D91BDB492300B2A672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE542E21BDB492300B2A672 /* Axiz_Brain_BlueUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DE542D41BDB492300B2A672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DE542B81BDB492200B2A672 /* Axiz Brain Blue */;
+			targetProxy = 9DE542D31BDB492300B2A672 /* PBXContainerItemProxy */;
+		};
+		9DE542DF1BDB492300B2A672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DE542B81BDB492200B2A672 /* Axiz Brain Blue */;
+			targetProxy = 9DE542DE1BDB492300B2A672 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DE542C51BDB492200B2A672 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DE542C61BDB492200B2A672 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DE542CA1BDB492200B2A672 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DE542CB1BDB492200B2A672 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DE542E41BDB492300B2A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DE542E51BDB492300B2A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DE542E71BDB492300B2A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Axiz Brain Blue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-Blue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DE542E81BDB492300B2A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Axiz Brain Blue/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-Blue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9DE542EA1BDB492300B2A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Axiz Brain BlueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-BlueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axiz Brain Blue.app/Axiz Brain Blue";
+			};
+			name = Debug;
+		};
+		9DE542EB1BDB492300B2A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Axiz Brain BlueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-BlueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axiz Brain Blue.app/Axiz Brain Blue";
+			};
+			name = Release;
+		};
+		9DE542ED1BDB492300B2A672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Axiz Brain BlueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-BlueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Axiz Brain Blue";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9DE542EE1BDB492300B2A672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Axiz Brain BlueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Axiz.Axiz-Brain-BlueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Axiz Brain Blue";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DE542B41BDB492200B2A672 /* Build configuration list for PBXProject "Axiz Brain Blue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE542E41BDB492300B2A672 /* Debug */,
+				9DE542E51BDB492300B2A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE542E61BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain Blue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE542E71BDB492300B2A672 /* Debug */,
+				9DE542E81BDB492300B2A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9DE542E91BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain BlueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE542EA1BDB492300B2A672 /* Debug */,
+				9DE542EB1BDB492300B2A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9DE542EC1BDB492300B2A672 /* Build configuration list for PBXNativeTarget "Axiz Brain BlueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE542ED1BDB492300B2A672 /* Debug */,
+				9DE542EE1BDB492300B2A672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DE542B11BDB492200B2A672 /* Project object */;
+}

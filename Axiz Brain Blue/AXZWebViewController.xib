@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXZWebViewController">
+            <connections>
+                <outlet property="WebView" destination="qFf-2g-0Iy" id="sqR-7j-vGm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFf-2g-0Iy">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-D2-5gZ">
+                    <rect key="frame" x="518" y="270" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eAW-sJ-qhP"/>
+                        <constraint firstAttribute="width" constant="40" id="xEy-Wg-pey"/>
+                    </constraints>
+                    <state key="normal" image="backtomain.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeWebViewAction:" destination="-1" eventType="touchUpInside" id="8F8-Cc-ZqB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qFf-2g-0Iy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bfp-jK-Y3A"/>
+                <constraint firstAttribute="trailing" secondItem="qFf-2g-0Iy" secondAttribute="trailing" id="Cft-KR-Sv6"/>
+                <constraint firstAttribute="trailing" secondItem="5fd-D2-5gZ" secondAttribute="trailing" constant="10" id="EDf-f8-ugz"/>
+                <constraint firstItem="qFf-2g-0Iy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VMS-ec-JQz"/>
+                <constraint firstAttribute="bottom" secondItem="5fd-D2-5gZ" secondAttribute="bottom" constant="10" id="mKw-6L-czd"/>
+                <constraint firstAttribute="bottom" secondItem="qFf-2g-0Iy" secondAttribute="bottom" id="u3Q-3p-IV0"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backtomain.png" width="24" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
