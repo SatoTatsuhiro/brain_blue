@@ -3,15 +3,15 @@
 #import <CoreLocation/CoreLocation.h>
 #import "STAnnotation.h"
 
-
 @interface AXZMapViewController ()<MKMapViewDelegate,UITextFieldDelegate,CLLocationManagerDelegate>
+
 @property MKMapView* mapView;
 @property CLLocationCoordinate2D nowLocation;
+
 - (void)geocorde:(NSString *)place;
 - (IBAction)backToMainView:(id)sender;
 
 @end
-
 
 @implementation AXZMapViewController
 @synthesize AdressStrTextField;
@@ -53,12 +53,6 @@ int mapFlag = 1;
 
     }
     
-    [self performSegueWithIdentifier:@"pushNewsViewCtl" sender:self];
-    
-    
-    
-    
-    
     UILabel* latLabel = [[UILabel alloc]init];
     latLabel.text = @"LATITUDE:133.22.2222";
     latLabel.font = [UIFont systemFontOfSize:11];
@@ -72,12 +66,6 @@ int mapFlag = 1;
     [self.view addSubview:self.mapView];
     [self.view addSubview:latLabel];
     [self.view addSubview:logLabel];
-    
-   
-    
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -231,7 +219,5 @@ int mapFlag = 1;
         return nil;
     }
 }
-
-
 
 @end

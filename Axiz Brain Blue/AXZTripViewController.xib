@@ -24,21 +24,12 @@
             <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tripmeter_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="vds-88-Fhe">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tripmeter_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-fg-QnE">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znf-eG-yC4">
-                    <rect key="frame" x="240" y="175" width="89" height="53"/>
-                    <state key="normal" image="button_km_trip.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="typeChangeAction:" destination="-1" eventType="touchUpInside" id="hfd-cv-Vad"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-9r-AZS">
                     <rect key="frame" x="318" y="175" width="75" height="55"/>
-                    <state key="normal" image="button_set.png">
+                    <state key="normal" image="trip_button_set.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -47,7 +38,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pd-rZ-Rpz">
                     <rect key="frame" x="171" y="175" width="84" height="55"/>
-                    <state key="normal" image="trip_button_reset@2x.png">
+                    <state key="normal" image="trip_button_reset.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -91,11 +82,20 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s4-YG-zvP">
                     <rect key="frame" x="524" y="140" width="24" height="24"/>
-                    <state key="normal" image="yajirushi_r.png">
+                    <state key="normal" image="arrow_right.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="backToMainViewAction:" destination="-1" eventType="touchUpInside" id="B23-Kk-Jbo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znf-eG-yC4">
+                    <rect key="frame" x="240" y="175" width="89" height="53"/>
+                    <state key="normal" image="trip_button_km.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="typeChangeAction:" destination="-1" eventType="touchUpInside" id="hfd-cv-Vad"/>
                     </connections>
                 </button>
             </subviews>
@@ -104,10 +104,10 @@
         </view>
     </objects>
     <resources>
-        <image name="button_km_trip.png" width="70" height="55"/>
-        <image name="button_set.png" width="75" height="55"/>
-        <image name="trip_button_reset@2x.png" width="568" height="320"/>
-        <image name="tripmeter_background.png" width="568" height="320"/>
-        <image name="yajirushi_r.png" width="24" height="24"/>
+        <image name="arrow_right.png" width="24" height="24"/>
+        <image name="trip_button_km.png" width="140" height="110"/>
+        <image name="trip_button_reset.png" width="568" height="320"/>
+        <image name="trip_button_set.png" width="150" height="110"/>
+        <image name="tripmeter_background.png" width="1136" height="640"/>
     </resources>
 </document>

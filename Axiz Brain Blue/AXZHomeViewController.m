@@ -150,12 +150,15 @@
 - (void)arrowLeftButtonDidTapped:(id)sender
 {
     AXZTripViewController *tripViewController = [[AXZTripViewController alloc] initWithNibName:NSStringFromClass([AXZTripViewController class]) bundle:nil];
+    tripViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:tripViewController animated:YES completion:nil];
 }
 
 - (void)arrowRightButtonDidTapped:(id)sender
 {
-    
+    AXZMapViewController *mapViewController = [[AXZMapViewController alloc] initWithNibName:NSStringFromClass([AXZMapViewController class]) bundle:nil];
+    mapViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:mapViewController animated:YES completion:nil];
 }
 
 //=============================================================
