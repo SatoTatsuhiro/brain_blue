@@ -38,6 +38,17 @@
 		9D7BB8911BDB8F4F00A6DFB7 /* AXZTripViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB88F1BDB8F4F00A6DFB7 /* AXZTripViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		9D7BB8941BDB940D00A6DFB7 /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8921BDB940D00A6DFB7 /* arrow_left@2x.png */; settings = {ASSET_TAGS = (); }; };
 		9D7BB8951BDB940D00A6DFB7 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8931BDB940D00A6DFB7 /* arrow_right@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8B71BDBAE3900A6DFB7 /* trip_button_km_hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8AC1BDBAE3900A6DFB7 /* trip_button_km_hover@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8B81BDBAE3900A6DFB7 /* trip_button_km@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8AD1BDBAE3900A6DFB7 /* trip_button_km@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8B91BDBAE3900A6DFB7 /* trip_button_mph_hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8AE1BDBAE3900A6DFB7 /* trip_button_mph_hover@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8BA1BDBAE3900A6DFB7 /* trip_button_mph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8AF1BDBAE3900A6DFB7 /* trip_button_mph@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8BB1BDBAE3900A6DFB7 /* trip_button_reset_hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B01BDBAE3900A6DFB7 /* trip_button_reset_hover@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8BC1BDBAE3900A6DFB7 /* trip_button_reset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B11BDBAE3900A6DFB7 /* trip_button_reset@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8BD1BDBAE3900A6DFB7 /* trip_button_running@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B21BDBAE3900A6DFB7 /* trip_button_running@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8BE1BDBAE3900A6DFB7 /* trip_button_set_hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B31BDBAE3900A6DFB7 /* trip_button_set_hover@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8BF1BDBAE3900A6DFB7 /* trip_button_set@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B41BDBAE3900A6DFB7 /* trip_button_set@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8C01BDBAE3900A6DFB7 /* trip_running@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B51BDBAE3900A6DFB7 /* trip_running@2x.png */; settings = {ASSET_TAGS = (); }; };
+		9D7BB8C11BDBAE3900A6DFB7 /* tripmeter_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB8B61BDBAE3900A6DFB7 /* tripmeter_background@2x.png */; settings = {ASSET_TAGS = (); }; };
 		9DE542BE1BDB492200B2A672 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE542BD1BDB492200B2A672 /* main.m */; };
 		9DE542C71BDB492200B2A672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542C51BDB492200B2A672 /* Main.storyboard */; };
 		9DE542C91BDB492200B2A672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE542C81BDB492200B2A672 /* Assets.xcassets */; };
@@ -112,6 +123,17 @@
 		9D7BB88F1BDB8F4F00A6DFB7 /* AXZTripViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZTripViewController.xib; sourceTree = SOURCE_ROOT; };
 		9D7BB8921BDB940D00A6DFB7 /* arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_left@2x.png"; path = "images/arrow_left@2x.png"; sourceTree = SOURCE_ROOT; };
 		9D7BB8931BDB940D00A6DFB7 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_right@2x.png"; path = "images/arrow_right@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8AC1BDBAE3900A6DFB7 /* trip_button_km_hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_km_hover@2x.png"; path = "images/trip_button_km_hover@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8AD1BDBAE3900A6DFB7 /* trip_button_km@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_km@2x.png"; path = "images/trip_button_km@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8AE1BDBAE3900A6DFB7 /* trip_button_mph_hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_mph_hover@2x.png"; path = "images/trip_button_mph_hover@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8AF1BDBAE3900A6DFB7 /* trip_button_mph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_mph@2x.png"; path = "images/trip_button_mph@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B01BDBAE3900A6DFB7 /* trip_button_reset_hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_reset_hover@2x.png"; path = "images/trip_button_reset_hover@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B11BDBAE3900A6DFB7 /* trip_button_reset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_reset@2x.png"; path = "images/trip_button_reset@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B21BDBAE3900A6DFB7 /* trip_button_running@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_running@2x.png"; path = "images/trip_button_running@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B31BDBAE3900A6DFB7 /* trip_button_set_hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_set_hover@2x.png"; path = "images/trip_button_set_hover@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B41BDBAE3900A6DFB7 /* trip_button_set@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_button_set@2x.png"; path = "images/trip_button_set@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B51BDBAE3900A6DFB7 /* trip_running@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "trip_running@2x.png"; path = "images/trip_running@2x.png"; sourceTree = SOURCE_ROOT; };
+		9D7BB8B61BDBAE3900A6DFB7 /* tripmeter_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tripmeter_background@2x.png"; path = "images/tripmeter_background@2x.png"; sourceTree = SOURCE_ROOT; };
 		9DE542B91BDB492200B2A672 /* Axiz Brain Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axiz Brain Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE542BD1BDB492200B2A672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DE542C61BDB492200B2A672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +232,17 @@
 				9D7BB86F1BDB870800A6DFB7 /* user_red_35_background@2x.png */,
 				9D7BB8701BDB870800A6DFB7 /* user_red_background@2x.png */,
 				9D7BB8711BDB870800A6DFB7 /* user@2x.png */,
+				9D7BB8AC1BDBAE3900A6DFB7 /* trip_button_km_hover@2x.png */,
+				9D7BB8AD1BDBAE3900A6DFB7 /* trip_button_km@2x.png */,
+				9D7BB8AE1BDBAE3900A6DFB7 /* trip_button_mph_hover@2x.png */,
+				9D7BB8AF1BDBAE3900A6DFB7 /* trip_button_mph@2x.png */,
+				9D7BB8B01BDBAE3900A6DFB7 /* trip_button_reset_hover@2x.png */,
+				9D7BB8B11BDBAE3900A6DFB7 /* trip_button_reset@2x.png */,
+				9D7BB8B21BDBAE3900A6DFB7 /* trip_button_running@2x.png */,
+				9D7BB8B31BDBAE3900A6DFB7 /* trip_button_set_hover@2x.png */,
+				9D7BB8B41BDBAE3900A6DFB7 /* trip_button_set@2x.png */,
+				9D7BB8B51BDBAE3900A6DFB7 /* trip_running@2x.png */,
+				9D7BB8B61BDBAE3900A6DFB7 /* tripmeter_background@2x.png */,
 			);
 			name = pngfile;
 			sourceTree = "<group>";
@@ -407,24 +440,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7BB8771BDB870800A6DFB7 /* button_km_hover.png in Resources */,
+				9D7BB8BC1BDBAE3900A6DFB7 /* trip_button_reset@2x.png in Resources */,
 				9D7BB8871BDB870800A6DFB7 /* noimage@2x.png in Resources */,
 				9D7BB87E1BDB870800A6DFB7 /* default_blue_35_background@2x.png in Resources */,
 				9D7BB88A1BDB870800A6DFB7 /* user_red_35_background@2x.png in Resources */,
 				9D7BB87C1BDB870800A6DFB7 /* button_mph_red@2x.png in Resources */,
 				9D7BB8851BDB870800A6DFB7 /* inner_circle_mph_red@2x.png in Resources */,
 				9DE542CC1BDB492200B2A672 /* LaunchScreen.storyboard in Resources */,
+				9D7BB8BB1BDBAE3900A6DFB7 /* trip_button_reset_hover@2x.png in Resources */,
 				9D7BB8861BDB870800A6DFB7 /* map@2x.png in Resources */,
 				9D7BB87A1BDB870800A6DFB7 /* button_mph_hover_red@2x.png in Resources */,
+				9D7BB8BE1BDBAE3900A6DFB7 /* trip_button_set_hover@2x.png in Resources */,
+				9D7BB8C11BDBAE3900A6DFB7 /* tripmeter_background@2x.png in Resources */,
 				9DE543101BDB580100B2A672 /* AXZSettingViewController.xib in Resources */,
 				9D7BB8791BDB870800A6DFB7 /* button_km.png in Resources */,
 				9D7BB8821BDB870800A6DFB7 /* inner_cicle_km.png in Resources */,
+				9D7BB8C01BDBAE3900A6DFB7 /* trip_running@2x.png in Resources */,
+				9D7BB8B71BDBAE3900A6DFB7 /* trip_button_km_hover@2x.png in Resources */,
 				9DE542C91BDB492200B2A672 /* Assets.xcassets in Resources */,
 				9D7BB88B1BDB870800A6DFB7 /* user_red_background@2x.png in Resources */,
+				9D7BB8B91BDBAE3900A6DFB7 /* trip_button_mph_hover@2x.png in Resources */,
 				9D7BB8891BDB870800A6DFB7 /* reset@2x.png in Resources */,
 				9D7BB8831BDB870800A6DFB7 /* inner_cicle_mph.png in Resources */,
 				9D7BB8941BDB940D00A6DFB7 /* arrow_left@2x.png in Resources */,
 				9D7BB8751BDB870800A6DFB7 /* bluetooth@2x.png in Resources */,
 				9D7BB8741BDB870800A6DFB7 /* bluetooth_background@2x.png in Resources */,
+				9D7BB8BF1BDBAE3900A6DFB7 /* trip_button_set@2x.png in Resources */,
+				9D7BB8BD1BDBAE3900A6DFB7 /* trip_button_running@2x.png in Resources */,
 				9D7BB87D1BDB870800A6DFB7 /* button_mph.png in Resources */,
 				9DE543141BDB580100B2A672 /* AXZMapViewController.xib in Resources */,
 				9D7BB8811BDB870800A6DFB7 /* info@2x.png in Resources */,
@@ -440,8 +482,10 @@
 				9DE5430B1BDB580100B2A672 /* AXZBlueToothViewController.xib in Resources */,
 				9D7BB8731BDB870800A6DFB7 /* backtomain@2x.png in Resources */,
 				9D7BB8801BDB870800A6DFB7 /* hari.png in Resources */,
+				9D7BB8B81BDBAE3900A6DFB7 /* trip_button_km@2x.png in Resources */,
 				9DE543121BDB580100B2A672 /* AXZWebViewController.xib in Resources */,
 				9D7BB88C1BDB870800A6DFB7 /* user@2x.png in Resources */,
+				9D7BB8BA1BDBAE3900A6DFB7 /* trip_button_mph@2x.png in Resources */,
 				9DE5430E1BDB580100B2A672 /* AXZMeterView.xib in Resources */,
 				9D7BB8881BDB870800A6DFB7 /* red_background_4@2x.png in Resources */,
 			);

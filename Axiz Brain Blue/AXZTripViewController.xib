@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tripmeter_backgroundNew.png" translatesAutoresizingMaskIntoConstraints="NO" id="vds-88-Fhe">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tripmeter_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="vds-88-Fhe">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znf-eG-yC4">
@@ -47,7 +47,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pd-rZ-Rpz">
                     <rect key="frame" x="171" y="175" width="84" height="55"/>
-                    <state key="normal" image="button_reset.png">
+                    <state key="normal" image="trip_button_reset@2x.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -105,9 +105,9 @@
     </objects>
     <resources>
         <image name="button_km_trip.png" width="70" height="55"/>
-        <image name="button_reset.png" width="75" height="55"/>
         <image name="button_set.png" width="75" height="55"/>
-        <image name="tripmeter_backgroundNew.png" width="568" height="320"/>
+        <image name="trip_button_reset@2x.png" width="568" height="320"/>
+        <image name="tripmeter_background.png" width="568" height="320"/>
         <image name="yajirushi_r.png" width="24" height="24"/>
     </resources>
 </document>
