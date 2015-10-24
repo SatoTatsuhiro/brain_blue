@@ -9,7 +9,7 @@
 @implementation AXZAsset
 
 - (instancetype)init
-{
+{   
     self = [super init];
     if (self) {
         self.screenRect = [[UIScreen mainScreen] bounds];

@@ -5,6 +5,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "AXZWebViewController.h"
 #import "AXZSettingViewController.h"
+#import "AXZMapViewController.h"
+#import "AXZTripViewController.h"
 
 #define PAGE_COUNT 5
 
@@ -147,12 +149,14 @@
 
 - (void)arrowLeftButtonDidTapped:(id)sender
 {
-
+    AXZTripViewController *tripViewController = [[AXZTripViewController alloc] initWithNibName:NSStringFromClass([AXZTripViewController class]) bundle:nil];
+    [self presentViewController:tripViewController animated:YES completion:nil];
 }
 
 - (void)arrowRightButtonDidTapped:(id)sender
 {
-    }
+    
+}
 
 //=============================================================
 #pragma Error

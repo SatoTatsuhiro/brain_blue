@@ -1,14 +1,6 @@
-//
-//  MapViewController.h
-//  Axiz Brain Blue
-//
-//  Created by 左藤樹洋 on 2014/06/18.
-//  Copyright (c) 2014年 Tatsuhiro Sato. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-@interface MapViewController : UIViewController
+@interface AXZMapViewController : UIViewController
 @property double latitude;  //緯度
 @property double longitude; //経度
 

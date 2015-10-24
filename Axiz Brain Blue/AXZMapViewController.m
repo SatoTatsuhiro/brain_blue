@@ -1,10 +1,10 @@
-#import "MapViewController.h"
+#import "AXZMapViewController.h"
 #import "AXZHomeViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "STAnnotation.h"
 
 
-@interface MapViewController ()<MKMapViewDelegate,UITextFieldDelegate,CLLocationManagerDelegate>
+@interface AXZMapViewController ()<MKMapViewDelegate,UITextFieldDelegate,CLLocationManagerDelegate>
 @property MKMapView* mapView;
 @property CLLocationCoordinate2D nowLocation;
 - (void)geocorde:(NSString *)place;
@@ -13,7 +13,7 @@
 @end
 
 
-@implementation MapViewController
+@implementation AXZMapViewController
 @synthesize AdressStrTextField;
 @synthesize locationManager;
 
