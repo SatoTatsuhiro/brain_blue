@@ -36,7 +36,7 @@
     
 }
 
-- (NSUInteger)supportedInterfaceOrientations{
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskLandscapeLeft;
 }
 

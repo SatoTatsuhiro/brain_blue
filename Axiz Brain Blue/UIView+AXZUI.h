@@ -13,5 +13,8 @@
 + (CGRect)settingUserImageRect;
 + (CGRect)settingUserNameLabelRect;
 + (CGRect)settingUserMachineNameLabelRect;
++ (CGRect)slopeRiderImageViewRect;
++ (CGRect)bankRiderImageViewRect;
++ (CGRect)mainSpeedPinRect;
 
 @end

@@ -1,24 +1,21 @@
 #import "AXZBlueToothViewController.h"
+#import "AXZAsset.h"
 
 @interface AXZBlueToothViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *bluetoothImageView;
+
 - (IBAction)closeViewAction:(id)sender;
 
 @end
 
 @implementation AXZBlueToothViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AXZAsset *asset = [AXZAsset new];
+    self.bluetoothImageView = asset.blueToothBackgroundImageView;
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,17 +27,19 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(BOOL)shouldAutorotate{
+-(BOOL)shouldAutorotate
+{
     return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskLandscapeLeft;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscapeLeft;
 }
 
 @end

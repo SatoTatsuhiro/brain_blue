@@ -8,7 +8,7 @@
 #import "AXZMapViewController.h"
 #import "AXZTripViewController.h"
 
-#define PAGE_COUNT 5
+#define PAGE_COUNT 6
 
 @interface AXZHomeViewController () <AXZMeterViewDelegate, CLLocationManagerDelegate>
 
@@ -64,8 +64,8 @@
         AXZMeterView *meterView = [nib instantiateWithOwner:self options:nil][0];
         meterView.delegate = self;
         meterView.index = i;
+        [meterView setImages];
         meterView.frame = CGRectMake(0, self.view.frame.size.height * i, self.view.frame.size.width, self.view.frame.size.height);
-        [meterView index];
         [self.meterViews addObject:meterView];
     }
 }
@@ -113,6 +113,7 @@
     
     for (AXZMeterView *meterView in self.meterViews) {
         [meterView updateSpeedLabelWithSpeed:newLocation.speed];
+        [meterView updateSpeedPinWithSpeed:newLocation.speed];
     }
 }
 
@@ -173,6 +174,11 @@
     }]];
     
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscapeLeft;
 }
 
 @end

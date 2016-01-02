@@ -13,6 +13,7 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
 @property (nonatomic) AXZAsset *asset;
 @property (nonatomic) NSInteger speedButtonType;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *speedPinImageView;
 
 @end
 
@@ -20,12 +21,29 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
 
 - (void)awakeFromNib
 {
+    self.innerCircleImageView.translatesAutoresizingMaskIntoConstraints = YES;
+    self.bankLabel.translatesAutoresizingMaskIntoConstraints = YES;
+    self.slopeLabel.translatesAutoresizingMaskIntoConstraints = YES;
+    self.speedLabel.translatesAutoresizingMaskIntoConstraints = YES;
+    self.speedButton.translatesAutoresizingMaskIntoConstraints = YES;
+    self.speedPinImageView.translatesAutoresizingMaskIntoConstraints = YES;
+
     self.asset = [AXZAsset new];
     [self setImages];
     self.speedButtonType = AXZSpeedButtonTypeKm;
     self.speedLabel.font = [UILabel mainLabelFont];
     self.bankLabel.font = [UILabel mainLabelFont];
     self.slopeLabel.font = [UILabel mainLabelFont];
+
+    self.innerCircleImageView.frame = [UIView mainInnerCircleImageViewRect];
+    self.speedLabel.frame = [UIView mainSpeedLabelRect];
+    self.bankLabel.frame = [UIView mainBankLabelRect];
+    self.slopeLabel.frame = [UIView mainSlopeLabelRect];
+    self.speedButton.frame = [UIView mainSpeedTypeButtonRect];
+    self.speedPinImageView.frame = [UIView mainSpeedPinRect];
+
+    self.speedPinImageView.transform = CGAffineTransformMakeRotation(180);
+
 }
 
 - (void)setImages
@@ -34,15 +52,7 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
     self.innerCircleImageView.image = self.asset.kmInnerCircleImages[self.index];
     [self.speedButton setImage:self.asset.kmButtonImages[self.index] forState:UIControlStateNormal];
     [self.speedButton setImage:self.asset.kmButtonHoverImages[self.index] forState:UIControlStateHighlighted];
-}
-
-- (void)layoutSubviews
-{
-    self.innerCircleImageView.frame = [UIView mainInnerCircleImageViewRect];
-    self.speedLabel.frame = [UIView mainSpeedTypeButtonRect];
-    self.bankLabel.frame = [UIView mainBankLabelRect];
-    self.slopeLabel.frame = [UIView mainSlopeLabelRect];
-    self.speedButton.frame = [UIView mainSpeedTypeButtonRect];
+    [self.interfaceImageView setImage:self.asset.meterInterfaceImages[self.index]];
 }
 
 //=============================================================
@@ -66,6 +76,16 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
 - (void)updateSlopeLabelWithSpeed:(float)slope
 {
     self.slopeLabel.text = [NSString stringWithFormat:@"%.0f°",slope];
+}
+
+//=============================================================
+#pragma UpdateSpeedPin
+//=============================================================
+
+- (void)updateSpeedPinWithSpeed:(float)speed
+{
+    float speedRadian = speed * M_PI / 180;
+    self.speedPinImageView.transform = CGAffineTransformMakeRotation(speedRadian -(2 * M_PI /3));
 }
 //=============================================================
 #pragma UIAction

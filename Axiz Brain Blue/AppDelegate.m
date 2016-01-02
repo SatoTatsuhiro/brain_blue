@@ -7,8 +7,9 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [self startAnimation];
     return YES;
 }
 
@@ -32,6 +33,64 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+}
+
+//=============================================================
+#pragma splashAnimation
+//=============================================================
+
+- (void)startAnimation
+{
+    [self splashAnimation1];
+}
+
+- (void)splashAnimation1
+{
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.window.frame];
+    [imageView setImage:[UIImage imageNamed:@"kiken_rdc"]];
+
+    [UIImageView animateWithDuration:2
+                               delay:0
+                             options:UIViewAnimationOptionCurveEaseInOut
+                          animations:^ {
+                              [self.window.rootViewController.view addSubview:imageView];
+                          }
+                          completion:^(BOOL isSuccess) {
+                              [self splashAnimation2:imageView];
+                          }];
+
+}
+
+- (void)splashAnimation2:(UIImageView *)splashImageView
+{
+    [UIImageView animateWithDuration:2
+                               delay:0
+                             options:UIViewAnimationOptionCurveEaseInOut
+                          animations:^ {
+                              [splashImageView setImage:[UIImage imageNamed:@"red"]];
+                          }
+                          completion:^(BOOL isSuccess) {
+                              [self splashAnimation3:splashImageView];
+                          }];
+
+}
+
+- (void)splashAnimation3:(UIImageView *)splashImageView
+{
+    [UIImageView animateWithDuration:1.5f
+                               delay:0
+                             options:UIViewAnimationOptionCurveEaseInOut
+                          animations:^ {
+                              splashImageView.alpha = 0.0;
+                          }
+                          completion:^(BOOL isSuccess) {
+                              [splashImageView removeFromSuperview];
+                          }];
 }
 
 @end

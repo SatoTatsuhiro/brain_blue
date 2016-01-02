@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXZSettingViewController">
             <connections>
                 <outlet property="backgroundImageView" destination="7U9-7h-tJf" id="tSU-3h-LoP"/>
                 <outlet property="bluetoothButton" destination="2Vk-RD-aUW" id="zU1-7R-Bpk"/>
-                <outlet property="machineTextField" destination="BEW-XQ-cHB" id="eES-cU-M3D"/>
-                <outlet property="textField" destination="AJl-xC-ugc" id="4HB-c0-evb"/>
+                <outlet property="machineNameTextField" destination="BEW-XQ-cHB" id="eCG-M3-vO1"/>
+                <outlet property="settingInterfaceImage" destination="Dxf-Ua-TVF" id="L2I-Xm-alB"/>
+                <outlet property="userImage" destination="n2i-C8-acP" id="TME-c7-yOQ"/>
+                <outlet property="userNameTextField" destination="AJl-xC-ugc" id="lVy-2w-Ci9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,16 +21,20 @@
             <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="user_red_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-7h-tJf">
+                <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="df_bk_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-7h-tJf">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_red_if.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxf-Ua-TVF">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <gestureRecognizers/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2i-C8-acP">
-                    <rect key="frame" x="73" y="58" width="200" height="200"/>
-                    <state key="normal" image="noimage.png">
+                    <rect key="frame" x="-23" y="22" width="260" height="260"/>
+                    <state key="normal" image="noimage_55.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="userImageChange:" destination="-1" eventType="touchUpInside" id="IsF-Dn-rop"/>
+                        <action selector="userImageChange:" destination="-1" eventType="touchUpInside" id="15X-Qo-UJf"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-mv-y7a">
@@ -56,49 +63,49 @@
                         <action selector="BluetoothButtonAction:" destination="-1" eventType="touchUpInside" id="gf9-TZ-2zn"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NoName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEW-XQ-cHB">
-                    <rect key="frame" x="362" y="228" width="175" height="30"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="machineTextFieldAction:" destination="-1" eventType="editingDidEnd" id="t7g-qW-Q5j"/>
-                    </connections>
-                </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NoName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJl-xC-ugc">
-                    <rect key="frame" x="356" y="202" width="186" height="30"/>
+                    <rect key="frame" x="356" y="200" width="186" height="30"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="settingButtonAction:" destination="-1" eventType="editingDidEnd" id="a6B-HD-Tuc"/>
-                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NoName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEW-XQ-cHB">
+                    <rect key="frame" x="356" y="228" width="186" height="30"/>
+                    <gestureRecognizers/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7U9-7h-tJf" secondAttribute="trailing" id="2fn-q1-Wvd"/>
                 <constraint firstItem="nhe-mv-y7a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="7rL-Rm-b1Z"/>
+                <constraint firstAttribute="trailing" secondItem="7U9-7h-tJf" secondAttribute="trailing" id="DSP-17-3Bn"/>
+                <constraint firstItem="7U9-7h-tJf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K68-hW-XGI"/>
                 <constraint firstItem="7U9-7h-tJf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LfF-TP-pcz"/>
+                <constraint firstAttribute="bottom" secondItem="Dxf-Ua-TVF" secondAttribute="bottom" id="M6R-Zr-cQX"/>
+                <constraint firstItem="Dxf-Ua-TVF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MZx-ps-2HA"/>
                 <constraint firstAttribute="bottom" secondItem="7U9-7h-tJf" secondAttribute="bottom" id="PlG-Ki-YcM"/>
                 <constraint firstItem="nhe-mv-y7a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="WDe-IS-PlP"/>
+                <constraint firstItem="Dxf-Ua-TVF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b4L-WB-91g"/>
+                <constraint firstAttribute="bottom" secondItem="7U9-7h-tJf" secondAttribute="bottom" id="drS-Dg-GSp"/>
                 <constraint firstAttribute="trailing" secondItem="2Vk-RD-aUW" secondAttribute="trailing" constant="10" id="jv5-Ft-Rqp"/>
                 <constraint firstItem="2Vk-RD-aUW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="ljl-Oy-dOz"/>
+                <constraint firstAttribute="trailing" secondItem="Dxf-Ua-TVF" secondAttribute="trailing" id="syt-sq-TuV"/>
                 <constraint firstItem="7U9-7h-tJf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x3J-aL-Fzl"/>
+                <constraint firstItem="7U9-7h-tJf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ycd-0m-vps"/>
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-            <point key="canvasLocation" x="108" y="259"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="107" y="258"/>
         </view>
     </objects>
     <resources>
-        <image name="backtomain.png" width="24" height="24"/>
-        <image name="bluetooth.png" width="17" height="26"/>
-        <image name="noimage.png" width="202" height="202"/>
-        <image name="user_red_background.png" width="568" height="320"/>
+        <image name="backtomain.png" width="48" height="48"/>
+        <image name="bluetooth.png" width="34" height="52"/>
+        <image name="df_bk_bg.png" width="1136" height="640"/>
+        <image name="noimage_55.png" width="659" height="659"/>
+        <image name="user_red_if.png" width="1136" height="640"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
