@@ -165,7 +165,6 @@
 //=============================================================
 #pragma Error
 //=============================================================
-
 - (void)showError
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"モーションエラー" message:@"モーションの取得に失敗しました." preferredStyle:UIAlertControllerStyleAlert];

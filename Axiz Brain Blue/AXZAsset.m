@@ -9,7 +9,7 @@
 @implementation AXZAsset
 
 - (instancetype)init
-{   
+{
     self = [super init];
     if (self) {
         self.screenRect = [[UIScreen mainScreen] bounds];
@@ -19,56 +19,52 @@
 
 - (NSMutableArray *)backgroundImages
 {
-    //TODO: 画像を設定する.
     NSMutableArray *backgroundImages = [[NSMutableArray alloc] init];
 
-    if (self.screenRect.size.width == 480 && self.screenRect.size.height == 320) {
-
-        [backgroundImages addObject:[UIImage imageNamed:@"default_red_35_background"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"default_red_35_background"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"default_red_35_background"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"default_red_35_background"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"default_red_35_background"]];
-
-    } else if (self.screenRect.size.width == 568 && self.screenRect.size.height == 320) {
-
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-
-    } else if (self.screenRect.size.width == 667 && self.screenRect.size.height == 375) {
-
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-
-    } else if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
-
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-        [backgroundImages addObject:[UIImage imageNamed:@"red_background_4"]];
-
-    }
+    [backgroundImages addObject:[UIImage imageNamed:@"df_bk_bg"]];
+    [backgroundImages addObject:[UIImage imageNamed:@"xspeed_bg"]];
+    [backgroundImages addObject:[UIImage imageNamed:@"bikers_bg"]];
+    [backgroundImages addObject:[UIImage imageNamed:@"kkk_bg"]];
+    [backgroundImages addObject:[UIImage imageNamed:@"motomoto_bg"]];
+    [backgroundImages addObject:[UIImage imageNamed:@"motochamp_bg"]];
 
     return backgroundImages;
+}
+
+- (NSMutableArray *)meterInterfaceImages    
+{
+    NSMutableArray *meterInterfaceImages = [[NSMutableArray alloc] init];
+
+    if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"df_red_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"xspeed_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"bikers_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"kkk_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
+    } else {
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"df_red_if_55"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"xspeed_if_55"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"bikers_if_55"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"kkk_if_55"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
+    }
+
+    return meterInterfaceImages;
 }
 
 - (NSMutableArray *)kmButtonImages
 {
     NSMutableArray *kmButtonImages = [[NSMutableArray alloc] init];
     
-    [kmButtonImages addObject:[UIImage imageNamed:@"button_km_red"]];
-    [kmButtonImages addObject:[UIImage imageNamed:@"button_km_red"]];
-    [kmButtonImages addObject:[UIImage imageNamed:@"button_km_red"]];
-    [kmButtonImages addObject:[UIImage imageNamed:@"button_km_red"]];
-    [kmButtonImages addObject:[UIImage imageNamed:@"button_km_red"]];
-    
+    [kmButtonImages addObject:[UIImage imageNamed:@"km_type3_55"]];
+    [kmButtonImages addObject:[UIImage imageNamed:@"km_type1_55"]];
+    [kmButtonImages addObject:[UIImage imageNamed:@"km_type2_55"]];
+    [kmButtonImages addObject:[UIImage imageNamed:@"km_type1_55"]];
+    [kmButtonImages addObject:[UIImage imageNamed:@"km_type2_55"]];
+    [kmButtonImages addObject:[UIImage imageNamed:@"km_type2_55"]];
+
     return kmButtonImages;
 }
 
@@ -76,11 +72,12 @@
 {
     NSMutableArray *kmButtonHoverImages = [[NSMutableArray alloc] init];
     
-    [kmButtonHoverImages addObject:[UIImage imageNamed:@"button_km_hover_red"]];
-    [kmButtonHoverImages addObject:[UIImage imageNamed:@"button_km_hover_red"]];
-    [kmButtonHoverImages addObject:[UIImage imageNamed:@"button_km_hover_red"]];
-    [kmButtonHoverImages addObject:[UIImage imageNamed:@"button_km_hover_red"]];
-    [kmButtonHoverImages addObject:[UIImage imageNamed:@"button_km_hover_red"]];
+    [kmButtonHoverImages addObject:[UIImage imageNamed:@"km_hover_type3_55"]];
+    [kmButtonHoverImages addObject:[UIImage imageNamed:@"km_hover_type1_55"]];
+    [kmButtonHoverImages addObject:[UIImage imageNamed:@"km_hover_type2_55"]];
+    [kmButtonHoverImages addObject:[UIImage imageNamed:@"km_hover_type1_55"]];
+    [kmButtonHoverImages addObject:[UIImage imageNamed:@"km_hover_type2_55"]];
+    [kmButtonHoverImages addObject:[UIImage imageNamed:@"km_hover_type2_55"]];
 
     return kmButtonHoverImages;
 }
@@ -94,7 +91,8 @@
     [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
     [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
     [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
-    
+    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
+
     return innerCircleImages;
 }
 
@@ -102,6 +100,7 @@
 {
     NSMutableArray *innerCircleImages = [[NSMutableArray alloc] init];
 
+    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
     [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
     [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
     [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
@@ -115,11 +114,12 @@
 {
     NSMutableArray *mphButtonImages = [[NSMutableArray alloc] init];
     
-    [mphButtonImages addObject:[UIImage imageNamed:@"button_mph_red"]];
-    [mphButtonImages addObject:[UIImage imageNamed:@"button_mph_red"]];
-    [mphButtonImages addObject:[UIImage imageNamed:@"button_mph_red"]];
-    [mphButtonImages addObject:[UIImage imageNamed:@"button_mph_red"]];
-    [mphButtonImages addObject:[UIImage imageNamed:@"button_mph_red"]];
+    [mphButtonImages addObject:[UIImage imageNamed:@"mph_type3_55"]];
+    [mphButtonImages addObject:[UIImage imageNamed:@"mph_type1_55"]];
+    [mphButtonImages addObject:[UIImage imageNamed:@"mph_type2_55"]];
+    [mphButtonImages addObject:[UIImage imageNamed:@"mph_type1_55"]];
+    [mphButtonImages addObject:[UIImage imageNamed:@"mph_type2_55"]];
+    [mphButtonImages addObject:[UIImage imageNamed:@"mph_type2_55"]];
 
     return mphButtonImages;
 }
@@ -128,13 +128,24 @@
 {
     NSMutableArray *mphButtonHoverImages = [[NSMutableArray alloc] init];
     
-    [mphButtonHoverImages addObject:[UIImage imageNamed:@"button_mph_hover_red"]];
-    [mphButtonHoverImages addObject:[UIImage imageNamed:@"button_mph_hover_red"]];
-    [mphButtonHoverImages addObject:[UIImage imageNamed:@"button_mph_hover_red"]];
-    [mphButtonHoverImages addObject:[UIImage imageNamed:@"button_mph_hover_red"]];
-    [mphButtonHoverImages addObject:[UIImage imageNamed:@"button_mph_hover_red"]];
-    
+    [mphButtonHoverImages addObject:[UIImage imageNamed:@"mph_hover_type3_55"]];
+    [mphButtonHoverImages addObject:[UIImage imageNamed:@"mph_hover_type1_55"]];
+    [mphButtonHoverImages addObject:[UIImage imageNamed:@"mph_hover_type2_55"]];
+    [mphButtonHoverImages addObject:[UIImage imageNamed:@"mph_hover_type1_55"]];
+    [mphButtonHoverImages addObject:[UIImage imageNamed:@"mph_hover_type2_55"]];
+    [mphButtonHoverImages addObject:[UIImage imageNamed:@"mph_hover_type2_55"]];
+
     return mphButtonHoverImages;
+}
+
+- (NSArray *)splashImages
+{
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+
+    [images addObject:[UIImage imageNamed:@"kiken"]];
+    [images addObject:[UIImage imageNamed:@"red"]];
+
+    return images;
 }
 
 - (UIImageView *)bankBackgroundImageView
@@ -151,30 +162,22 @@
     return nil;
 }
 
-- (UIImageView *)slopeBackgroundImageView
+- (UIImageView *)slopeInterfaceImageView
 {
-    if (self.screenRect.size.width == 320) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_35_background"]];
-    } else if (self.screenRect.size.width == 480) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_background"]];
-    } else if (self.screenRect.size.width == 667) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_background"]];
-    } else if (self.screenRect.size.width == 736) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_background"]];
+    if (self.screenRect.size.width == 736) {
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_if_55"]];
+    } else {
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_if"]];
     }
     return nil;
 }
 
-- (UIImage *)settingBackgroundImage
+- (UIImageView *)settingInterfaceImageView
 {
-    if (self.screenRect.size.width == 480 && self.screenRect.size.height == 320) {
-        return [UIImage imageNamed:@"user_red_background"];
-    } else if (self.screenRect.size.width == 568 && self.screenRect.size.height == 320) {
-        return [UIImage imageNamed:@"user_red_background"];
-    } else if (self.screenRect.size.width == 667 && self.screenRect.size.height == 375) {
-        return [UIImage imageNamed:@"user_red_background"];
-    } else if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
-        return [UIImage imageNamed:@"user_red_background"];
+    if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_red_if"]];
+    } else {
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_red_if_55"]];
     }
     return nil;
 }
@@ -191,6 +194,26 @@
         return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_background"]];
     }
     return nil;
+}
+
+- (UIImageView *)blueToothImageView
+{
+    if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bluetooth_if"]];
+    } else {
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bluetooth_if_55"]];
+    }
+    return nil;
+}
+
+- (UIImageView *)bankRiderImageView
+{
+    return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rider_slope@2x"]];
+}
+
+- (UIImageView *)slopeRiderImageView
+{
+    return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rider_slope@2x"]];
 }
 
 @end
