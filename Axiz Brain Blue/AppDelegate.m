@@ -72,7 +72,7 @@
                                delay:0
                              options:UIViewAnimationOptionCurveEaseInOut
                           animations:^ {
-                              [splashImageView setImage:[UIImage imageNamed:@"red"]];
+                              [splashImageView setImage:[UIImage imageNamed:@"blue"]];
                           }
                           completion:^(BOOL isSuccess) {
                               [self splashAnimation3:splashImageView];

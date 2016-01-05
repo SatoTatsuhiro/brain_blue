@@ -24,7 +24,7 @@
                 <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="df_bk_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-7h-tJf">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_red_if.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxf-Ua-TVF">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_blue_if.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dxf-Ua-TVF">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                     <gestureRecognizers/>
                 </imageView>
@@ -106,6 +106,6 @@
         <image name="bluetooth.png" width="34" height="52"/>
         <image name="df_bk_bg.png" width="1136" height="640"/>
         <image name="noimage_55.png" width="659" height="659"/>
-        <image name="user_red_if.png" width="1136" height="640"/>
+        <image name="user_blue_if.png" width="1136" height="640"/>
     </resources>
 </document>

@@ -36,19 +36,19 @@
     NSMutableArray *meterInterfaceImages = [[NSMutableArray alloc] init];
 
     if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
-        [meterInterfaceImages addObject:[UIImage imageNamed:@"df_red_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"df_blue_if"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"xspeed_if"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"bikers_if"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"kkk_if"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
     } else {
-        [meterInterfaceImages addObject:[UIImage imageNamed:@"df_red_if_55"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"df_blue_if_55"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"xspeed_if_55"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"bikers_if_55"]];
         [meterInterfaceImages addObject:[UIImage imageNamed:@"kkk_if_55"]];
-        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
-        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if_55"]];
+        [meterInterfaceImages addObject:[UIImage imageNamed:@"mmw_if_55"]];
     }
 
     return meterInterfaceImages;
@@ -86,12 +86,12 @@
 {
     NSMutableArray *innerCircleImages = [[NSMutableArray alloc] init];
     
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_km_red"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_km_type3"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_km_type1"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_km_type2"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_km_type1"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_km_type2"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_km_type2"]];
 
     return innerCircleImages;
 }
@@ -100,12 +100,12 @@
 {
     NSMutableArray *innerCircleImages = [[NSMutableArray alloc] init];
 
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
-    [innerCircleImages addObject:[UIImage imageNamed:@"inner_circle_mph_red"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_mph_type3"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_mph_type1"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_mph_type2"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_mph_type1"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_mph_type2"]];
+    [innerCircleImages addObject:[UIImage imageNamed:@"innercircle_mph_type2"]];
 
     return innerCircleImages;
 }
@@ -143,7 +143,7 @@
     NSMutableArray *images = [[NSMutableArray alloc] init];
 
     [images addObject:[UIImage imageNamed:@"kiken"]];
-    [images addObject:[UIImage imageNamed:@"red"]];
+    [images addObject:[UIImage imageNamed:@"blue"]];
 
     return images;
 }
@@ -175,9 +175,9 @@
 - (UIImageView *)settingInterfaceImageView
 {
     if (self.screenRect.size.width == 736 && self.screenRect.size.height == 414) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_red_if"]];
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_blue_if"]];
     } else {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_red_if_55"]];
+        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_blue_if_55"]];
     }
     return nil;
 }
