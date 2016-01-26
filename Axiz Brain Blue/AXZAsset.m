@@ -17,6 +17,10 @@
     return self;
 }
 
+//=============================================================
+#pragma Main meter
+//=============================================================
+
 - (NSMutableArray *)backgroundImages
 {
     NSMutableArray *backgroundImages = [[NSMutableArray alloc] init];
@@ -138,6 +142,10 @@
     return mphButtonHoverImages;
 }
 
+//=============================================================
+#pragma Splash
+//=============================================================
+
 - (NSArray *)splashImages
 {
     NSMutableArray *images = [[NSMutableArray alloc] init];
@@ -148,29 +156,9 @@
     return images;
 }
 
-- (UIImageView *)bankBackgroundImageView
-{
-    if (self.screenRect.size.width == 320) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bank_35_background"]];
-    } else if (self.screenRect.size.width == 480) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bank_background"]];
-    } else if (self.screenRect.size.width == 667) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bank_background"]];
-    } else if (self.screenRect.size.width == 736) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bank_background"]];
-    }
-    return nil;
-}
-
-- (UIImageView *)slopeInterfaceImageView
-{
-    if (self.screenRect.size.width == 736) {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_if_55"]];
-    } else {
-        return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slope_if"]];
-    }
-    return nil;
-}
+//=============================================================
+#pragma Setting
+//=============================================================
 
 - (UIImageView *)settingInterfaceImageView
 {
@@ -204,16 +192,6 @@
         return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bluetooth_if_55"]];
     }
     return nil;
-}
-
-- (UIImageView *)bankRiderImageView
-{
-    return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rider_slope@2x"]];
-}
-
-- (UIImageView *)slopeRiderImageView
-{
-    return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rider_slope@2x"]];
 }
 
 @end

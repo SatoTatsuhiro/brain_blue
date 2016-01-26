@@ -7,10 +7,6 @@
 @property int totalDistance;
 @property int totalMileDistance;
 
-- (IBAction)resetbutton:(id)sender;
-- (IBAction)setButtonAction:(id)sender;
-- (IBAction)typeChangeAction:(id)sender;
-
 @property (nonatomic) IBOutlet UIButton *setButton;
 @property (nonatomic) IBOutlet UIButton *resetButton;
 @property (nonatomic) IBOutlet UIButton *typeChangeButton;

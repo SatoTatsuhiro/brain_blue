@@ -23,8 +23,11 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oFn-5D-nYu">
                     <rect key="frame" x="0.0" y="74" width="568" height="246"/>
                 </mapView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="mapNew.png" translatesAutoresizingMaskIntoConstraints="NO" id="tsk-xR-btQ">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="mapheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="tsk-xR-btQ">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="fI6-DK-dsj"/>
+                    </constraints>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="検索/住所を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4OQ-ck-fl6">
                     <rect key="frame" x="44" y="22" width="480" height="30"/>
@@ -74,7 +77,9 @@
                 <constraint firstAttribute="trailing" secondItem="TnD-x7-V2E" secondAttribute="trailing" constant="5" id="AIK-Sm-oWH"/>
                 <constraint firstItem="eXe-ZI-z1K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="BmX-Pc-b3G"/>
                 <constraint firstItem="mSi-dd-sJX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="K2f-xL-eZP"/>
+                <constraint firstItem="tsk-xR-btQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lb9-Kt-bPS"/>
                 <constraint firstAttribute="bottom" secondItem="TnD-x7-V2E" secondAttribute="bottom" constant="16.5" id="P4J-aE-gjY"/>
+                <constraint firstItem="oFn-5D-nYu" firstAttribute="top" secondItem="tsk-xR-btQ" secondAttribute="bottom" id="SeI-he-oRI"/>
                 <constraint firstItem="4OQ-ck-fl6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="VaN-Za-qWo"/>
                 <constraint firstItem="tsk-xR-btQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VbB-g6-bSY"/>
                 <constraint firstItem="eXe-ZI-z1K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="X8L-mc-5Ip"/>
@@ -83,8 +88,6 @@
                 <constraint firstAttribute="trailing" secondItem="tsk-xR-btQ" secondAttribute="trailing" id="bJW-Fk-iyf"/>
                 <constraint firstAttribute="bottom" secondItem="oFn-5D-nYu" secondAttribute="bottom" id="fxX-Vi-IKQ"/>
                 <constraint firstAttribute="trailing" secondItem="mSi-dd-sJX" secondAttribute="trailing" constant="9" id="gAa-9M-ezt"/>
-                <constraint firstItem="oFn-5D-nYu" firstAttribute="top" secondItem="tsk-xR-btQ" secondAttribute="bottom" id="hod-EL-Pp7"/>
-                <constraint firstItem="tsk-xR-btQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kuM-nl-hWb"/>
                 <constraint firstAttribute="trailing" secondItem="oFn-5D-nYu" secondAttribute="trailing" id="mHy-8v-vck"/>
                 <constraint firstItem="mSi-dd-sJX" firstAttribute="leading" secondItem="4OQ-ck-fl6" secondAttribute="trailing" constant="8" id="nom-jE-240"/>
                 <constraint firstItem="4OQ-ck-fl6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pFL-hB-eme"/>
@@ -103,7 +106,7 @@
     </objects>
     <resources>
         <image name="arrow_left.png" width="24" height="24"/>
-        <image name="mapNew.png" width="568" height="74"/>
+        <image name="mapheader.png" width="960" height="149"/>
         <image name="reset.png" width="55" height="55"/>
     </resources>
 </document>
