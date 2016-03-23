@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXZSettingViewController">
@@ -11,7 +11,9 @@
                 <outlet property="bluetoothButton" destination="2Vk-RD-aUW" id="zU1-7R-Bpk"/>
                 <outlet property="machineNameTextField" destination="BEW-XQ-cHB" id="eCG-M3-vO1"/>
                 <outlet property="settingInterfaceImage" destination="Dxf-Ua-TVF" id="L2I-Xm-alB"/>
+                <outlet property="subView" destination="RWg-JQ-aRh" id="8Ox-zb-Nco"/>
                 <outlet property="userImage" destination="n2i-C8-acP" id="TME-c7-yOQ"/>
+                <outlet property="userImageView" destination="JWl-wr-KvF" id="IOM-cL-LYy"/>
                 <outlet property="userNameTextField" destination="AJl-xC-ugc" id="lVy-2w-Ci9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -76,24 +78,40 @@
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RWg-JQ-aRh">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWl-wr-KvF">
+                    <rect key="frame" x="124" y="0.0" width="320" height="320"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JWl-wr-KvF" secondAttribute="height" multiplier="1:1" id="dDs-T0-b2O"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="JWl-wr-KvF" secondAttribute="bottom" id="2Yi-0K-Hkh"/>
                 <constraint firstAttribute="trailing" secondItem="7U9-7h-tJf" secondAttribute="trailing" id="2fn-q1-Wvd"/>
+                <constraint firstItem="JWl-wr-KvF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3tP-CH-YoI"/>
                 <constraint firstItem="nhe-mv-y7a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="7rL-Rm-b1Z"/>
                 <constraint firstAttribute="trailing" secondItem="7U9-7h-tJf" secondAttribute="trailing" id="DSP-17-3Bn"/>
                 <constraint firstItem="7U9-7h-tJf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K68-hW-XGI"/>
+                <constraint firstItem="RWg-JQ-aRh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KFm-AV-a6E"/>
                 <constraint firstItem="7U9-7h-tJf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LfF-TP-pcz"/>
                 <constraint firstAttribute="bottom" secondItem="Dxf-Ua-TVF" secondAttribute="bottom" id="M6R-Zr-cQX"/>
                 <constraint firstItem="Dxf-Ua-TVF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MZx-ps-2HA"/>
                 <constraint firstAttribute="bottom" secondItem="7U9-7h-tJf" secondAttribute="bottom" id="PlG-Ki-YcM"/>
+                <constraint firstAttribute="centerX" secondItem="JWl-wr-KvF" secondAttribute="centerX" id="S3H-fU-GII"/>
                 <constraint firstItem="nhe-mv-y7a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="WDe-IS-PlP"/>
                 <constraint firstItem="Dxf-Ua-TVF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b4L-WB-91g"/>
                 <constraint firstAttribute="bottom" secondItem="7U9-7h-tJf" secondAttribute="bottom" id="drS-Dg-GSp"/>
                 <constraint firstAttribute="trailing" secondItem="2Vk-RD-aUW" secondAttribute="trailing" constant="10" id="jv5-Ft-Rqp"/>
                 <constraint firstItem="2Vk-RD-aUW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="ljl-Oy-dOz"/>
+                <constraint firstAttribute="bottom" secondItem="RWg-JQ-aRh" secondAttribute="bottom" id="mRf-m3-OIq"/>
+                <constraint firstItem="RWg-JQ-aRh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rIn-Ii-zHQ"/>
                 <constraint firstAttribute="trailing" secondItem="Dxf-Ua-TVF" secondAttribute="trailing" id="syt-sq-TuV"/>
                 <constraint firstItem="7U9-7h-tJf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x3J-aL-Fzl"/>
+                <constraint firstAttribute="trailing" secondItem="RWg-JQ-aRh" secondAttribute="trailing" id="yV0-WP-2M5"/>
                 <constraint firstItem="7U9-7h-tJf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ycd-0m-vps"/>
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -108,4 +126,9 @@
         <image name="noimage_55.png" width="659" height="659"/>
         <image name="user_blue_if.png" width="1136" height="640"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

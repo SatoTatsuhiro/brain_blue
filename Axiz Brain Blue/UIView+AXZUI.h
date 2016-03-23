@@ -16,5 +16,6 @@
 + (CGRect)slopeRiderImageViewRect;
 + (CGRect)bankRiderImageViewRect;
 + (CGRect)mainSpeedPinRect;
++ (CGRect)tripResetButtonRect;
 
 @end

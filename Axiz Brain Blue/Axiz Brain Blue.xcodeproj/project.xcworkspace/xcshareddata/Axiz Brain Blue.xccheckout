@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1F59249E-AEFF-4F06-8F6C-B9132021D98A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Axiz Brain Blue</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>983C42757FE5F934CCC33F51C47FE54B6F62AB58</key>
+		<string>https://github.com/SatoTatsuhiro/brain_blue.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Axiz Brain Blue/Axiz Brain Blue.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>983C42757FE5F934CCC33F51C47FE54B6F62AB58</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SatoTatsuhiro/brain_blue.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>983C42757FE5F934CCC33F51C47FE54B6F62AB58</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>983C42757FE5F934CCC33F51C47FE54B6F62AB58</string>
+			<key>IDESourceControlWCCName</key>
+			<string>brain_blue</string>
+		</dict>
+	</array>
+</dict>
+</plist>

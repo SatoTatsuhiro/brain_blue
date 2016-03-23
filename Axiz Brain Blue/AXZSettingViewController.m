@@ -7,8 +7,8 @@
 @interface AXZSettingViewController ()<UIImagePickerControllerDelegate, UITextFieldDelegate, UIGestureRecognizerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *userImage;
-@property UIView* subView;
-@property UIImage* userImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *subView;
+@property (strong, nonatomic) IBOutlet UIImageView *userImageView;
 @property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *machineNameTextField;
 @property (strong, nonatomic) UIImagePickerController *imagePicker;
@@ -36,7 +36,6 @@
     self.machineNameTextField.frame = [UIView settingUserMachineNameLabelRect];
     [self updateMachineNameTextField];
 
-    self.subView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 568, 320)];
     self.subView.hidden = YES;
     self.subView.backgroundColor = [UIColor blackColor];
 
@@ -68,9 +67,6 @@
 
     NSData* userImageData = [[NSUserDefaults standardUserDefaults]objectForKey:@"userImage"];
 
-    UIImageView* userImageView = [[UIImageView alloc]initWithFrame:CGRectMake(120, 0, 320, 300)];
-    [self.view addSubview:self.subView];
-
     self.userImage.translatesAutoresizingMaskIntoConstraints = YES;
     self.userImage.frame = [UIView settingUserImageRect];
 
@@ -80,13 +76,14 @@
         CALayer* layer = [self.userImage layer];
         [layer setMasksToBounds:YES];
         [layer setCornerRadius:100];
-        userImageView.image = userimage;
+        self.userImageView.image = userimage;
+        self.userImageView.backgroundColor = [UIColor whiteColor];
+        
         
     }
     self.subView.hidden = YES;
     self.subView.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:self.subView];
-    [self.subView addSubview:userImageView];
+    [self.subView addSubview:self.userImageView];
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -148,7 +145,7 @@
                                                                       [self registerUserImageIcon];
                                                                   }];
 
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         [alertController dismissViewControllerAnimated:YES completion:nil];
     }];
     [alertController addAction:displayProfileImageAction];

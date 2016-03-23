@@ -20,7 +20,6 @@
 @synthesize locationManager;
 
 double lat, lng;
-int mapFlag = 1;
 
 - (void)viewDidLoad
 {
@@ -134,15 +133,12 @@ int mapFlag = 1;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-    if (mapFlag == 1) {
-        MKCoordinateRegion region = MKCoordinateRegionMake([newLocation coordinate], MKCoordinateSpanMake(0.3, 0.3));
-        self.nowLocation = CLLocationCoordinate2DMake([newLocation coordinate].latitude, [newLocation coordinate].longitude);
-        self.latLabel.text = [NSString stringWithFormat:@"LONGITUDE:%f", newLocation.coordinate.latitude];
-        self.logLabel.text = [NSString stringWithFormat:@"LONGITUDE:%f", newLocation.coordinate.longitude];
-        [self.mapView setCenterCoordinate:[newLocation coordinate]];
-        [self.mapView setRegion:region];
-        mapFlag = 2;
-    }
+    MKCoordinateRegion region = MKCoordinateRegionMake([newLocation coordinate], MKCoordinateSpanMake(0.3, 0.3));
+    self.nowLocation = CLLocationCoordinate2DMake([newLocation coordinate].latitude, [newLocation coordinate].longitude);
+    self.latLabel.text = [NSString stringWithFormat:@"LONGITUDE:%f", newLocation.coordinate.latitude];
+    self.logLabel.text = [NSString stringWithFormat:@"LONGITUDE:%f", newLocation.coordinate.longitude];
+    [self.mapView setCenterCoordinate:[newLocation coordinate]];
+    [self.mapView setRegion:region];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
