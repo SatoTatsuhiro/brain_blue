@@ -7,5 +7,6 @@
 + (UIFont *)slopeLabelFont;
 + (UIFont *)settingUserNameTextFieldFont;
 + (UIFont *)settingUserMachineTextFieldFont;
++ (UIFont *)tripViewLabelFont;
 
 @end

@@ -1,5 +1,6 @@
 #import "AXZTripViewController.h"
 #import "UIView+AXZUI.h"
+#import "UILabel+AXZUI.h"
 #import <CoreLocation/CoreLocation.h>
 
 @interface AXZTripViewController ()<CLLocationManagerDelegate>
@@ -8,11 +9,18 @@
 @property int totalDistance;
 @property int totalMileDistance;
 
+@property (strong, nonatomic) IBOutlet UILabel *tripLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *tripLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *tripLabel3;
+@property (strong, nonatomic) IBOutlet UILabel *tripLabel4;
+@property (strong, nonatomic) IBOutlet UILabel *tripLabel5;
+@property (strong, nonatomic) IBOutlet UILabel *tripLabel6;
+
 @property (nonatomic) IBOutlet UIButton *setButton;
 @property (nonatomic) IBOutlet UIButton *resetButton;
 @property (nonatomic) IBOutlet UIButton *typeChangeButton;
 @property (nonatomic) NSInteger typeFlag;
-@property (nonatomic) NSInteger setTypeButtonFlag;
+@property (nonatomic) BOOL isTripWorking;
 
 @end
 
@@ -36,26 +44,63 @@
     [self.locationManager startUpdatingLocation];
     self.totalDistance = 0;
     self.typeFlag = 1;
-    self.setTypeButtonFlag = 1;
+    self.isTripWorking = false;
     
     [self prepareView];
+    [self prepareLabels];
 }
 
 - (void)prepareView
 {
     self.setButton.translatesAutoresizingMaskIntoConstraints = YES;
     self.setButton.frame = [UIView tripSetButtonRect];
+    
     self.resetButton.translatesAutoresizingMaskIntoConstraints = YES;
     self.resetButton.frame = [UIView tripResetButtonRect];
+    
     self.typeChangeButton.translatesAutoresizingMaskIntoConstraints = YES;
     self.typeChangeButton.frame = [UIView tripTypeChangeButtonRect];
+}
+
+- (void)prepareLabels
+{
+    CGRect labelRect = [UIView tripLabelRect];
+    CGFloat x = labelRect.origin.x;
+    CGFloat y = labelRect.origin.y;
+    CGFloat height = labelRect.size.height;
+    CGFloat width = labelRect.size.width;
+    CGFloat diffLabelX = [UIView tripDiffLabelPointX];
+    
+    self.tripLabel1.translatesAutoresizingMaskIntoConstraints = YES;
+    self.tripLabel1.frame = labelRect;
+    self.tripLabel1.font = [UILabel tripViewLabelFont];
+    
+    self.tripLabel2.translatesAutoresizingMaskIntoConstraints = YES;
+    self.tripLabel2.frame = CGRectMake(x + diffLabelX, y, width, height);
+    self.tripLabel2.font = [UILabel tripViewLabelFont];
+    
+    self.tripLabel3.translatesAutoresizingMaskIntoConstraints = YES;
+    self.tripLabel3.frame = CGRectMake(x + diffLabelX * 2, y, width, height);
+    self.tripLabel3.font = [UILabel tripViewLabelFont];
+    
+    self.tripLabel4.translatesAutoresizingMaskIntoConstraints = YES;
+    self.tripLabel4.frame = CGRectMake(x + diffLabelX * 3, y, width, height);
+    self.tripLabel4.font = [UILabel tripViewLabelFont];
+    
+    self.tripLabel5.translatesAutoresizingMaskIntoConstraints = YES;
+    self.tripLabel5.frame = CGRectMake(x + diffLabelX * 4, y, width, height);
+    self.tripLabel5.font = [UILabel tripViewLabelFont];
+    
+    self.tripLabel6.translatesAutoresizingMaskIntoConstraints = YES;
+    self.tripLabel6.frame = CGRectMake(x + diffLabelX * 5, y, width, height);
+    self.tripLabel6.font = [UILabel tripViewLabelFont];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 
     if(oldLocation != nil)
     {
-        if (self.setTypeButtonFlag == 2) {
+        if (self.isTripWorking) {
             CLLocationDistance distance = [newLocation distanceFromLocation:oldLocation];
             self.totalDistance = self.totalDistance + distance;
         }
@@ -92,11 +137,11 @@
 - (IBAction)typeChangeAction:(id)sender
 {
     if (self.typeFlag == 1) {
-        [self.typeChangeButton setImage:[UIImage imageNamed:@"trip_button_mph"] forState:UIControlStateNormal];
+        [self.typeChangeButton setImage:[UIImage imageNamed:@"button_mph"] forState:UIControlStateNormal];
         [self.typeChangeButton setImage:[UIImage imageNamed:@"trip_button_mph_hover"] forState:UIControlStateHighlighted];
         self.typeFlag = 2;
     } else if (self.typeFlag == 2) {
-        [self.typeChangeButton setImage:[UIImage imageNamed:@"trip_button_km"] forState:UIControlStateNormal];
+        [self.typeChangeButton setImage:[UIImage imageNamed:@"button_km"] forState:UIControlStateNormal];
         [self.typeChangeButton setImage:[UIImage imageNamed:@"trip_button_km_hover"] forState:UIControlStateHighlighted];
         self.typeFlag = 1;
     }
@@ -104,14 +149,14 @@
 
 - (IBAction)setButtonAction:(id)sender
 {
-    if (self.setTypeButtonFlag == 1) {
-        [self.setButton setImage:[UIImage imageNamed:@"trip_button_running"] forState:UIControlStateNormal];
-        [self.setButton setImage:[UIImage imageNamed:@"trip_button_running_hover"] forState:UIControlStateHighlighted];
-        self.setTypeButtonFlag = 2;
-    } else if (self.setTypeButtonFlag == 2) {
+    if (self.isTripWorking) {
         [self.setButton setImage:[UIImage imageNamed:@"trip_button_set"] forState:UIControlStateNormal];
         [self.setButton setImage:[UIImage imageNamed:@"trip_button_set_hover"] forState:UIControlStateHighlighted];
-        self.setTypeButtonFlag = 1;
+        self.isTripWorking = false;
+    } else {
+        [self.setButton setImage:[UIImage imageNamed:@"trip_button_running"] forState:UIControlStateNormal];
+        [self.setButton setImage:[UIImage imageNamed:@"trip_button_running_hover"] forState:UIControlStateHighlighted];
+        self.isTripWorking = true;
     }
 }
 

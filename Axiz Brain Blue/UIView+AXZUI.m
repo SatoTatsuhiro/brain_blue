@@ -268,15 +268,32 @@
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     
     if (screenRect.size.width == 480 && screenRect.size.height == 320) {
-        return CGRectMake(000, 000, 000, 000);
+        return CGRectMake(162, 131, 31, 27);
     } else if (screenRect.size.width == 568 && screenRect.size.height == 320) {
-        return CGRectMake(000, 000, 000, 000);
+        return CGRectMake(162, 131, 31, 27);
     } else if (screenRect.size.width == 667 && screenRect.size.height == 375) {
-        return CGRectMake(000, 000, 000, 000);
+        return CGRectMake(193, 154, 31, 27);
     } else if (screenRect.size.width == 736 && screenRect.size.height == 414) {
-        return CGRectMake(000, 000, 000, 000);
+        return CGRectMake(213, 166, 32, 38);
     }
     return CGRectMake(0, 0, 0, 0);
+}
+
++ (NSInteger)tripDiffLabelPointX
+{
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    
+    if (screenRect.size.width == 480 && screenRect.size.height == 320) {
+        return 42;
+    } else if (screenRect.size.width == 568 && screenRect.size.height == 320) {
+        return 42;
+    } else if (screenRect.size.width == 667 && screenRect.size.height == 375) {
+        return 50;
+    } else if (screenRect.size.width == 736 && screenRect.size.height == 414) {
+        return 55;
+    }
+    return 0;
+
 }
 
 @end

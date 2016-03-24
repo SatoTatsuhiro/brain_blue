@@ -19,5 +19,7 @@
 + (CGRect)tripResetButtonRect;
 + (CGRect)tripTypeChangeButtonRect;
 + (CGRect)tripSetButtonRect;
++ (CGRect)tripLabelRect;
++ (NSInteger)tripDiffLabelPointX;
 
 @end
