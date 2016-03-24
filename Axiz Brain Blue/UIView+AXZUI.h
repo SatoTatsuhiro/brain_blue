@@ -17,5 +17,7 @@
 + (CGRect)bankRiderImageViewRect;
 + (CGRect)mainSpeedPinRect;
 + (CGRect)tripResetButtonRect;
++ (CGRect)tripTypeChangeButtonRect;
++ (CGRect)tripSetButtonRect;
 
 @end

@@ -46,6 +46,10 @@
     return nil;
 }
 
+//=============================================================
+#pragma AXZSettingViewController
+//=============================================================
+
 + (UIFont *)settingUserMachineTextFieldFont
 {
     CGRect screenRect = [[UIScreen mainScreen] bounds];

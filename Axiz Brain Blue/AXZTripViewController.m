@@ -1,4 +1,5 @@
 #import "AXZTripViewController.h"
+#import "UIView+AXZUI.h"
 #import <CoreLocation/CoreLocation.h>
 
 @interface AXZTripViewController ()<CLLocationManagerDelegate>
@@ -36,11 +37,18 @@
     self.totalDistance = 0;
     self.typeFlag = 1;
     self.setTypeButtonFlag = 1;
+    
+    [self prepareView];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)prepareView
 {
-    [super didReceiveMemoryWarning];
+    self.setButton.translatesAutoresizingMaskIntoConstraints = YES;
+    self.setButton.frame = [UIView tripSetButtonRect];
+    self.resetButton.translatesAutoresizingMaskIntoConstraints = YES;
+    self.resetButton.frame = [UIView tripResetButtonRect];
+    self.typeChangeButton.translatesAutoresizingMaskIntoConstraints = YES;
+    self.typeChangeButton.frame = [UIView tripTypeChangeButtonRect];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
