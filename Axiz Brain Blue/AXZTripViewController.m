@@ -150,11 +150,11 @@
 - (IBAction)setButtonAction:(id)sender
 {
     if (self.isTripWorking) {
-        [self.setButton setImage:[UIImage imageNamed:@"trip_button_set"] forState:UIControlStateNormal];
+        [self.setButton setImage:[UIImage imageNamed:@"button_set"] forState:UIControlStateNormal];
         [self.setButton setImage:[UIImage imageNamed:@"trip_button_set_hover"] forState:UIControlStateHighlighted];
         self.isTripWorking = false;
     } else {
-        [self.setButton setImage:[UIImage imageNamed:@"trip_button_running"] forState:UIControlStateNormal];
+        [self.setButton setImage:[UIImage imageNamed:@"button_running"] forState:UIControlStateNormal];
         [self.setButton setImage:[UIImage imageNamed:@"trip_button_running_hover"] forState:UIControlStateHighlighted];
         self.isTripWorking = true;
     }
