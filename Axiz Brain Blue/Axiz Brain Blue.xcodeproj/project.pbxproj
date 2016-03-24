@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5878341CA42F3C00AE3884 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5878331CA42F3C00AE3884 /* LaunchScreen.xib */; };
 		9D008F9B1C57D4C0007B08B4 /* mapheader.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D008F9A1C57D4C0007B08B4 /* mapheader.png */; };
 		9D01F9DE1C3C3E0A00099049 /* button_km.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D01F9D21C3C3E0A00099049 /* button_km.png */; };
 		9D01F9DF1C3C3E0A00099049 /* button_km_55.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D01F9D31C3C3E0A00099049 /* button_km_55.png */; };
@@ -206,6 +207,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B5878331CA42F3C00AE3884 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9D008F9A1C57D4C0007B08B4 /* mapheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapheader.png; path = png/mapheader.png; sourceTree = SOURCE_ROOT; };
 		9D01F9D21C3C3E0A00099049 /* button_km.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_km.png; sourceTree = "<group>"; };
 		9D01F9D31C3C3E0A00099049 /* button_km_55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_km_55.png; sourceTree = "<group>"; };
@@ -765,6 +767,7 @@
 				9DE543011BDB580100B2A672 /* AXZMapViewController.h */,
 				9DE543021BDB580100B2A672 /* AXZMapViewController.m */,
 				9DE543031BDB580100B2A672 /* AXZMapViewController.xib */,
+				3B5878331CA42F3C00AE3884 /* LaunchScreen.xib */,
 				9D7BB88D1BDB8F4F00A6DFB7 /* AXZTripViewController.h */,
 				9D7BB88E1BDB8F4F00A6DFB7 /* AXZTripViewController.m */,
 				9D7BB88F1BDB8F4F00A6DFB7 /* AXZTripViewController.xib */,
@@ -930,6 +933,7 @@
 				9DBAEC251C37CAB60064ECBB /* km_hover_type3_55.png in Resources */,
 				9DBAEC6D1C37CAB60064ECBB /* xspeed_if.png in Resources */,
 				9DBAEC0E1C37CAB60064ECBB /* innercircle_mph_type1.png in Resources */,
+				3B5878341CA42F3C00AE3884 /* LaunchScreen.xib in Resources */,
 				9D01F9E71C3C3E0A00099049 /* button_set_55.png in Resources */,
 				9DBAEC511C37CAB60064ECBB /* axiz_rdc_55.png in Resources */,
 				9DBAEC481C37CAB60064ECBB /* chrome.png in Resources */,
