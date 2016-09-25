@@ -46,6 +46,22 @@
     return nil;
 }
 
++ (UIFont *)cbrLabelsFont
+{
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+
+    if (screenRect.size.width == 480 && screenRect.size.height == 320) {
+        return [UIFont systemFontOfSize:22];
+    } else if (screenRect.size.width == 568 && screenRect.size.height == 320) {
+        return [UIFont systemFontOfSize:22];
+    } else if (screenRect.size.width == 667 && screenRect.size.height == 375) {
+        return [UIFont systemFontOfSize:24];
+    } else if (screenRect.size.width == 736 && screenRect.size.height == 414) {
+        return [UIFont systemFontOfSize:26];
+    }
+    return nil;
+}
+
 //=============================================================
 #pragma AXZSettingViewController
 //=============================================================

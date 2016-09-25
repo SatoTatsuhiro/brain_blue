@@ -7,10 +7,11 @@
 #import "AXZSettingViewController.h"
 #import "AXZMapViewController.h"
 #import "AXZTripViewController.h"
+#import "AXZCbrMeterView.h"
 
 #define PAGE_COUNT 6
 
-@interface AXZHomeViewController () <AXZMeterViewDelegate, CLLocationManagerDelegate>
+@interface AXZHomeViewController () <AXZMeterViewDelegate, CLLocationManagerDelegate, AXZCbrMeterViewDelegate>
 
 @property (nonatomic) NSMutableArray *meterViews;
 @property (nonatomic) UIScrollView *scrollView;
@@ -59,7 +60,7 @@
 - (void)_prepareMeterViews
 {
     self.meterViews = [[NSMutableArray alloc] init];
-    for (int i = 0; i < PAGE_COUNT; i++) {
+    for (int i = 0; i < PAGE_COUNT-1; i++) {
         UINib *nib = [UINib nibWithNibName:@"AXZMeterView" bundle:nil];
         AXZMeterView *meterView = [nib instantiateWithOwner:self options:nil][0];
         meterView.delegate = self;
@@ -68,6 +69,11 @@
         meterView.frame = CGRectMake(0, self.view.frame.size.height * i, self.view.frame.size.width, self.view.frame.size.height);
         [self.meterViews addObject:meterView];
     }
+    UINib *cbrNib = [UINib nibWithNibName:@"AXZCbrMeterView" bundle:nil];
+    AXZCbrMeterView *cbrMeterView = [cbrNib instantiateWithOwner:self options:nil][0];
+    cbrMeterView.delegate = self;
+    cbrMeterView.frame = CGRectMake(0, self.view.frame.size.height * (PAGE_COUNT - 1), self.view.frame.size.width, self.view.frame.size.height);
+    [self.meterViews addObject:cbrMeterView];
 }
 
 - (void)_prepareLocationManager

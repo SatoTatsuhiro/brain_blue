@@ -21,6 +21,8 @@
 		9D01F9E71C3C3E0A00099049 /* button_set_55.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D01F9DB1C3C3E0A00099049 /* button_set_55.png */; };
 		9D01F9E81C3C3E0A00099049 /* tripmeter_if.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D01F9DC1C3C3E0A00099049 /* tripmeter_if.png */; };
 		9D01F9E91C3C3E0A00099049 /* tripmeter_if_55.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D01F9DD1C3C3E0A00099049 /* tripmeter_if_55.png */; };
+		9D706A341D27FA2600B558EC /* AXZCbrMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D706A321D27FA2600B558EC /* AXZCbrMeterView.m */; };
+		9D706A351D27FA2600B558EC /* AXZCbrMeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D706A331D27FA2600B558EC /* AXZCbrMeterView.xib */; };
 		9D7BB8901BDB8F4F00A6DFB7 /* AXZTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BB88E1BDB8F4F00A6DFB7 /* AXZTripViewController.m */; };
 		9D7BB8911BDB8F4F00A6DFB7 /* AXZTripViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7BB88F1BDB8F4F00A6DFB7 /* AXZTripViewController.xib */; };
 		9DBAEBD81C37CAB60064ECBB /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAEB331C37CAB60064ECBB /* arrow_left@2x.png */; };
@@ -221,6 +223,9 @@
 		9D01F9DB1C3C3E0A00099049 /* button_set_55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_set_55.png; sourceTree = "<group>"; };
 		9D01F9DC1C3C3E0A00099049 /* tripmeter_if.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripmeter_if.png; sourceTree = "<group>"; };
 		9D01F9DD1C3C3E0A00099049 /* tripmeter_if_55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripmeter_if_55.png; sourceTree = "<group>"; };
+		9D706A311D27FA2600B558EC /* AXZCbrMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZCbrMeterView.h; sourceTree = SOURCE_ROOT; };
+		9D706A321D27FA2600B558EC /* AXZCbrMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZCbrMeterView.m; sourceTree = SOURCE_ROOT; };
+		9D706A331D27FA2600B558EC /* AXZCbrMeterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZCbrMeterView.xib; sourceTree = SOURCE_ROOT; };
 		9D7BB88D1BDB8F4F00A6DFB7 /* AXZTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZTripViewController.h; sourceTree = SOURCE_ROOT; };
 		9D7BB88E1BDB8F4F00A6DFB7 /* AXZTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXZTripViewController.m; sourceTree = SOURCE_ROOT; };
 		9D7BB88F1BDB8F4F00A6DFB7 /* AXZTripViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXZTripViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -777,6 +782,9 @@
 				9DE543071BDB580100B2A672 /* UIView+AXZUI.m */,
 				9DE543171BDB594600B2A672 /* STAnnotation.h */,
 				9DE543181BDB594600B2A672 /* STAnnotation.m */,
+				9D706A311D27FA2600B558EC /* AXZCbrMeterView.h */,
+				9D706A321D27FA2600B558EC /* AXZCbrMeterView.m */,
+				9D706A331D27FA2600B558EC /* AXZCbrMeterView.xib */,
 				9DBAEB321C37CAB60064ECBB /* png */,
 				9DE542C51BDB492200B2A672 /* Main.storyboard */,
 				9DE542C81BDB492200B2A672 /* Assets.xcassets */,
@@ -1014,6 +1022,7 @@
 				9DBAEC0C1C37CAB60064ECBB /* innercircle_km_type2.png in Resources */,
 				9DBAEC021C37CAB60064ECBB /* mmw_if.png in Resources */,
 				9DBAEC0D1C37CAB60064ECBB /* innercircle_km_type3.png in Resources */,
+				9D706A351D27FA2600B558EC /* AXZCbrMeterView.xib in Resources */,
 				9DBAEC591C37CAB60064ECBB /* kiken_bk_55.png in Resources */,
 				9DBAEC661C37CAB60064ECBB /* user_chrome_if_55.png in Resources */,
 				9DBAEBEE1C37CAB60064ECBB /* df_chrome_if.png in Resources */,
@@ -1082,6 +1091,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D706A341D27FA2600B558EC /* AXZCbrMeterView.m in Sources */,
 				9DE543151BDB580100B2A672 /* UILabel+AXZUI.m in Sources */,
 				9DE5430F1BDB580100B2A672 /* AXZSettingViewController.m in Sources */,
 				9DE543111BDB580100B2A672 /* AXZWebViewController.m in Sources */,

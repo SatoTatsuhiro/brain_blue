@@ -21,5 +21,9 @@
 + (CGRect)tripSetButtonRect;
 + (CGRect)tripLabelRect;
 + (NSInteger)tripDiffLabelPointX;
-
++ (CGRect)cbrSpeedPinRect;
++ (CGRect)cbrEnginePinRect;
++ (CGRect)cbrSpeedLabelRect;
++ (CGRect)cbrBankLabelRect;
++ (CGRect)cbrSlopeLabelRect;
 @end

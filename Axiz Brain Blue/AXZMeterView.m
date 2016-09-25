@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *speedPinImageView;
 
+
 @end
 
 @implementation AXZMeterView
@@ -41,9 +42,7 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
     self.slopeLabel.frame = [UIView mainSlopeLabelRect];
     self.speedButton.frame = [UIView mainSpeedTypeButtonRect];
     self.speedPinImageView.frame = [UIView mainSpeedPinRect];
-
-    self.speedPinImageView.transform = CGAffineTransformMakeRotation(180);
-
+    self.speedPinImageView.transform = CGAffineTransformMakeRotation(4.2);
 }
 
 - (void)setImages
@@ -64,18 +63,54 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
     if (self.speedButtonType == AXZSpeedButtonTypeKm) {
         self.speedLabel.text = [NSString stringWithFormat:@"%.0f",speed * 3.6];
     } else {
-        self.speedLabel.text = [NSString stringWithFormat:@"%.0f",speed];
+        self.speedLabel.text = [NSString stringWithFormat:@"%.0f",speed * 2.4];
     }
 }
 
 - (void)updateBankLabelWithBank:(float)bank
 {
-    self.bankLabel.text = [NSString stringWithFormat:@"%.0f°",bank];
+    if (-bank > 90) {
+        bank = -90;
+    } else if (-bank < -90) {
+        bank = 90;
+    }
+
+    if (bank > 45 || bank < -45) {
+        [self.bankLabel setTextColor:[UIColor redColor]];
+    } else {
+        [self.bankLabel setTextColor:[UIColor whiteColor]];
+    }
+
+    if (-bank > 0) {
+        self.bankLabel.text = [NSString stringWithFormat:@"+%.0f°",-bank];
+    } else if (-bank < 0){
+        self.bankLabel.text = [NSString stringWithFormat:@"%.0f°",-bank];
+    } else {
+        self.bankLabel.text = [NSString stringWithFormat:@"0°"];
+    }
 }
 
 - (void)updateSlopeLabelWithSpeed:(float)slope
 {
-    self.slopeLabel.text = [NSString stringWithFormat:@"%.0f°",slope];
+    if (slope > 90) {
+        slope = 90;
+    } else if (slope < -90) {
+        slope = -90;
+    }
+
+    if (slope > 45 || slope < -45) {
+        [self.slopeLabel setTextColor:[UIColor redColor]];
+    } else {
+        [self.slopeLabel setTextColor:[UIColor whiteColor]];
+    }
+
+    if (slope > 0) {
+        self.slopeLabel.text = [NSString stringWithFormat:@"+%.0f°",slope];
+    } else if (slope < 0) {
+        self.slopeLabel.text = [NSString stringWithFormat:@"%.0f°",slope];
+    } else {
+        self.slopeLabel.text = [NSString stringWithFormat:@"0°"];
+    }
 }
 
 //=============================================================
@@ -90,7 +125,6 @@ typedef NS_ENUM(NSInteger, AXZSpeedButtonType) {
     self.speedPinImageView.transform = CGAffineTransformMakeRotation(speedRadian -(2 * M_PI /3));
     [UIView commitAnimations];
 }
-
 //=============================================================
 #pragma UIAction
 //=============================================================

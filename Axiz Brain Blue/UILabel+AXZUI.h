@@ -8,5 +8,6 @@
 + (UIFont *)settingUserNameTextFieldFont;
 + (UIFont *)settingUserMachineTextFieldFont;
 + (UIFont *)tripViewLabelFont;
++ (UIFont *)cbrLabelsFont;
 
 @end
